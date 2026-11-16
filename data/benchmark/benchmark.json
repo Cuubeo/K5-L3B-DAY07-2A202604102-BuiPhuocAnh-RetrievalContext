@@ -1,0 +1,521 @@
+[
+ {
+  "id": "q01",
+  "split": "dev",
+  "question": "How many programs does ProgramSelectBench contain in total?",
+  "expected_answer": "16,977 programs (agent-generated and human-engineered SSL programs)",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 2,
+    "evidence": "a large-scale program selection benchmark comprising 16,977 precomputed programs",
+    "group": 0
+   },
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 1,
+    "evidence": "a combined total of 16,977 agent-generated and human-engineered SSL programs",
+    "group": 1
+   },
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 18,
+    "evidence": "consisting of 16,977 evaluated program instances",
+    "group": 2
+   }
+  ],
+  "answerable": true,
+  "type": "direct",
+  "day6_split": "dev"
+ },
+ {
+  "id": "q02",
+  "split": "dev",
+  "question": "In how many of the 12 settings do agents beat the strongest human-engineered SSL baselines, and by up to how much?",
+  "expected_answer": "8 of 12 settings, by up to +21.8%",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 1,
+    "evidence": "exceeding the strongest human-engineered baselines in 8 of 12 settings by up to +21.8%",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "direct",
+  "day6_split": "dev"
+ },
+ {
+  "id": "q03",
+  "split": "dev",
+  "question": "Into which two sub-problems do the authors split the task of applying SSL with agents?",
+  "expected_answer": "Program discovery (finding good SSL programs under limited feedback) and program selection (picking one program without a large labeled validation set)",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 2,
+    "evidence": "where agents must discover effective SSL programs under limited feedback",
+    "group": 0
+   },
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 2,
+    "evidence": "where a single program must be identified from the discovered candidates without a large labeled validation set",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "paraphrase",
+  "day6_split": "dev",
+  "gold_mode": "cần đủ mọi evidence cùng group trong một chunk"
+ },
+ {
+  "id": "q04",
+  "split": "dev",
+  "question": "What does oracle performance measure when assessing program discovery?",
+  "expected_answer": "The test performance of the best program in the discovered pool, i.e. the quality of the best discovered solution independent of the ability to select it",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 5,
+    "evidence": "This measures the quality of the best discovered solution, independent of our ability to select it.",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "direct",
+  "day6_split": "dev"
+ },
+ {
+  "id": "q05",
+  "split": "dev",
+  "question": "Which pretrained vision backbones were the agents restricted to in the image classification experiments?",
+  "expected_answer": "CLIP ViT-B-16 and DINOv2-B",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 6,
+    "evidence": "Agents thus only use CLIP ViT-B-16 and DINOv2-B backbones",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "paraphrase",
+  "day6_split": "dev"
+ },
+ {
+  "id": "q06",
+  "split": "dev",
+  "question": "How long does each agent run last on the smaller datasets (DTD, RESISC45, KITTI), and on which GPU?",
+  "expected_answer": "8 hours on an NVIDIA RTX 6000 Ada Generation GPU",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 6,
+    "evidence": "we run each agent for 8 hours on an NVIDIA RTX 6000 Ada Generation GPU",
+    "group": 0
+   },
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 16,
+    "evidence": "each agent run is allocated 8 GPU hours on an NVIDIA RTX 6000 Ada Generation GPU",
+    "group": 1
+   }
+  ],
+  "answerable": true,
+  "type": "direct",
+  "day6_split": "dev"
+ },
+ {
+  "id": "q07",
+  "split": "dev",
+  "question": "Under what condition is it better to spend labels on program selection rather than on training?",
+  "expected_answer": "When unsupervised metrics fail, actively allocating labels to program selection can outperform allocating them to training",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 2,
+    "evidence": "when unsupervised metrics fail, actively allocating labels to program selection can outperform allocating them to training",
+    "group": 0
+   },
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 10,
+    "evidence": "when unsupervised metrics fail, labels spent on selection buy more accuracy than the same labels spent on training",
+    "group": 1
+   }
+  ],
+  "answerable": true,
+  "type": "conditional",
+  "day6_split": "dev"
+ },
+ {
+  "id": "q08",
+  "split": "dev",
+  "question": "Why can metrics based on learned representations fail to tell agent-generated programs apart?",
+  "expected_answer": "Agents may reuse the same frozen representation while applying different downstream SSL procedures, so representation-based metrics cannot distinguish programs despite large differences in predictive performance",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 7,
+    "evidence": "representation-based metrics cannot distinguish between programs despite potentially large differences in predictive performance",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "paraphrase",
+  "day6_split": "dev"
+ },
+ {
+  "id": "q09",
+  "split": "dev",
+  "question": "Instead of training a classifier, what does the best Retinopathy program combine?",
+  "expected_answer": "Frozen DINOv2 features, nearest-neighbor evidence, class prototypes, and an explicit ordinal bias",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 8,
+    "evidence": "it combines frozen DINOv2 features, nearest-neighbor evidence, class prototypes, and an explicit ordinal bias",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "direct",
+  "day6_split": "dev"
+ },
+ {
+  "id": "q10",
+  "split": "dev",
+  "question": "Which LLM backbone led agents to explore a more varied set of SSL strategies?",
+  "expected_answer": "Gemini-3.1 (higher diversity scores than GPT-5.4)",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 9,
+    "evidence": "Gemini-3.1 consistently produces higher diversity scores",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "paraphrase",
+  "day6_split": "dev"
+ },
+ {
+  "id": "q11",
+  "split": "dev",
+  "question": "What search hyperparameters are used for the greedy strategy?",
+  "expected_answer": "5 initial drafts, 5 improvement steps, debug probability 1.0, maximum debug depth 5",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 15,
+    "evidence": "5 initial drafts, 5 improvement steps, debug probability of 1.0, and maximum debug depth of 5",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "filter",
+  "day6_split": "dev",
+  "filter": {
+   "section": "A"
+  }
+ },
+ {
+  "id": "q12",
+  "split": "dev",
+  "question": "How many folds of noisy validation are used for the CLEVR dataset?",
+  "expected_answer": "5-fold for 10-shot and 4-fold for 20-shot",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 15,
+    "evidence": "10-shot has 5-fold and 20-shot has 4-fold noisy validation",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "filter",
+  "day6_split": "dev",
+  "filter": {
+   "section": "A"
+  }
+ },
+ {
+  "id": "q13",
+  "split": "dev",
+  "question": "Across how many labeled/unlabeled splits are the baselines rerun, and how does this differ from the original study?",
+  "expected_answer": "Three independently sampled splits per dataset and shot setting; the original study reported results on a single labeled split",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 17,
+    "evidence": "we rerun every baseline across three independently sampled labeled/unlabeled splits for each dataset and shot setting",
+    "group": 0
+   },
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 17,
+    "evidence": "The original study reports results on a single labeled split.",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "filter",
+  "day6_split": "dev",
+  "filter": {
+   "section": "B"
+  },
+  "gold_mode": "cần đủ mọi evidence cùng group trong một chunk"
+ },
+ {
+  "id": "q14",
+  "split": "dev",
+  "question": "In the top-performing Retinopathy program, what are the default alpha and number of iterations in the graph configuration?",
+  "expected_answer": "alpha = 0.85, iters = 25",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 34,
+    "evidence": "alpha: float = 0.85, iters: int = 25",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "code",
+  "day6_split": "dev"
+ },
+ {
+  "id": "q15",
+  "split": "dev",
+  "question": "Which optimizer does the draft operator prompt tell the agent to use instead of the deprecated transformers version?",
+  "expected_answer": "torch.optim.AdamW",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 26,
+    "evidence": "Use torch.optim.AdamW instead of the deprecated AdamW from transformers.",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "prompt",
+  "day6_split": "dev"
+ },
+ {
+  "id": "t16",
+  "split": "dev",
+  "question": "Into how many selection tasks is ProgramSelectBench organized?",
+  "expected_answer": "35 selection tasks",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 18,
+    "evidence": "We organize ProgramSelectBench into 35 selection tasks",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "filter",
+  "day6_split": "test",
+  "filter": {
+   "section": "C"
+  }
+ },
+ {
+  "id": "t17",
+  "split": "dev",
+  "question": "How much expert effort went into labeling the WildFin detection data, and how many boxes did it yield?",
+  "expected_answer": "Over 320 hours of expert effort, yielding 21,116 expert-labeled boxes",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 24,
+    "evidence": "requiring over 320 hours of expert effort, yielding 21,116 expert-labeled boxes",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "filter",
+  "day6_split": "test",
+  "filter": {
+   "section": "F"
+  }
+ },
+ {
+  "id": "t18",
+  "split": "dev",
+  "question": "Which search strategy explored the broadest range of SSL approaches?",
+  "expected_answer": "Evolutionary search (highest diversity scores)",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 9,
+    "evidence": "Evolutionary consistently produces the highest diversity scores",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "paraphrase",
+  "day6_split": "test"
+ },
+ {
+  "id": "t19",
+  "split": "dev",
+  "question": "What happens to the performance of the best discovered programs when the unlabeled corpus grows while the labeled set stays fixed?",
+  "expected_answer": "Performance generally improves, suggesting the programs rely on structure in the unlabeled data",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 7,
+    "evidence": "performance generally improves as more unlabeled data becomes available while keeping the labeled set fixed",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "conditional",
+  "day6_split": "test"
+ },
+ {
+  "id": "t20",
+  "split": "dev",
+  "question": "According to the debug operator prompt, what must the agent not change when fixing a bug?",
+  "expected_answer": "It must not alter the core method or underlying idea; it should only correct existing bugs",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 27,
+    "evidence": "alter the core method or underlying idea. Only correct existing bugs.",
+    "group": 0
+   }
+  ],
+  "answerable": true,
+  "type": "prompt",
+  "day6_split": "test"
+ },
+ {
+  "id": "t21",
+  "split": "test",
+  "type": "direct",
+  "answerable": true,
+  "question": "Which test harness do the authors use to study agent design choices in the SSL setting?",
+  "expected_answer": "Aira-Dojo",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 3,
+    "evidence": "We use Aira-Dojo [50] as such a test harness",
+    "group": 0
+   }
+  ]
+ },
+ {
+  "id": "t22",
+  "split": "test",
+  "type": "paraphrase",
+  "answerable": true,
+  "question": "What fixed set of program transformation operators does the agent use during search?",
+  "expected_answer": "Draft, Debug, Improve and Analyze",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 4,
+    "evidence": "We use a fixed operator set with Draft, Debug, Improve, and Analyze operators",
+    "group": 0
+   }
+  ]
+ },
+ {
+  "id": "t23",
+  "split": "test",
+  "type": "conditional",
+  "answerable": true,
+  "question": "How is the label budget (number of iterations) for each active selection algorithm determined on ProgramSelectBench?",
+  "expected_answer": "min(25, number of classes × number of training images per class)",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 19,
+    "evidence": "min(25,# of classes×# of training images per class)",
+    "group": 0
+   }
+  ]
+ },
+ {
+  "id": "t24",
+  "split": "test",
+  "type": "filter",
+  "answerable": true,
+  "filter": {
+   "section": "D"
+  },
+  "question": "Which model is used in the LLM-as-judge pipeline that analyzes agent-generated programs?",
+  "expected_answer": "GPT-5.4",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 20,
+    "evidence": "We use an LLM-as-judge pipeline to analyze the programs produced during agent search at scale with GPT-5.4",
+    "group": 0
+   }
+  ]
+ },
+ {
+  "id": "t25",
+  "split": "test",
+  "type": "multi-evidence",
+  "answerable": true,
+  "gold_mode": "cần đủ mọi evidence cùng group trong một chunk",
+  "question": "In the example AgentSSL prompt for DTD 3-shot, how many labeled training images and how many unlabeled datapoints does the agent receive?",
+  "expected_answer": "141 labeled training images (3 per class) and 1,739 unlabeled datapoints",
+  "gold": [
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 28,
+    "evidence": "Your training dataset contains 3 images per class for a total of just 141 images",
+    "group": 0
+   },
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 28,
+    "evidence": "Your unlabeled dataset has 1739 datapoints",
+    "group": 0
+   }
+  ]
+ },
+ {
+  "id": "n01",
+  "split": "dev",
+  "type": "abstain",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "question": "What was the total cost in US dollars of the LLM API calls used for the agent searches?",
+  "absence_reason": "Toàn bộ PDF (39 trang) không có '$', 'USD' hay 'dollar'; chi phí chỉ báo theo GPU giờ (A.3, trang 16: 2,484 GPU hours). Bẫy: agent dễ trả lời bằng số GPU giờ."
+ },
+ {
+  "id": "n02",
+  "split": "dev",
+  "type": "abstain",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "question": "What test accuracy does AgentSSL achieve on CIFAR-10?",
+  "absence_reason": "CIFAR-10/100 chỉ được nhắc ở trang 2 như benchmark SSL kinh điển; bài báo không chạy AgentSSL trên CIFAR (chỉ DTD, SUN397, RESISC45, Retinopathy, CLEVR, KITTI và WildFin/BuckTales)."
+ },
+ {
+  "id": "n03",
+  "split": "test",
+  "type": "abstain",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "question": "How well does AgentSSL perform on text classification tasks?",
+  "absence_reason": "Bài báo chỉ đánh giá phân loại ảnh và phát hiện đối tượng sinh thái; không có 'text classification'. 'NLP' chỉ xuất hiện trong tài liệu tham khảo trang 13 (không index)."
+ },
+ {
+  "id": "n04",
+  "split": "test",
+  "type": "abstain",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "question": "What is the GitHub URL of the AgentSSL source code?",
+  "absence_reason": "Không có 'GitHub' trong toàn bộ PDF; chỉ có link Hugging Face của bộ dữ liệu ProgramSelectBench (trang 18). Bẫy: agent dễ đưa link Hugging Face."
+ }
+]
