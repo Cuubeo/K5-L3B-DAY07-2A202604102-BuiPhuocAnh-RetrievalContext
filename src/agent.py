@@ -76,6 +76,8 @@ class LLMClient:
 
     def chat(self, messages: list[dict], tools: list[dict] | None = None, tool_choice: str = "auto") -> dict:
         body: dict[str, Any] = {"model": self.model, "messages": messages, "temperature": self.temperature}
+        if getattr(self, "max_tokens", None):
+            body["max_tokens"] = self.max_tokens
         if tools:
             body["tools"], body["tool_choice"] = tools, tool_choice
         req = urllib.request.Request(f"{self.base_url}/chat/completions", data=json.dumps(body).encode("utf-8"),
@@ -113,6 +115,8 @@ class LLMClient:
         raise RuntimeError("unreachable")
 
     def cost(self, usage: dict) -> float:
+        if usage.get("cost"):  # OpenRouter trả chi phí thật (USD) trong usage
+            return float(usage["cost"])
         return (usage.get("prompt_tokens", 0) * self.price_in + usage.get("completion_tokens", 0) * self.price_out) / 1e6
 
 
@@ -128,15 +132,16 @@ def run_agent(question: str, llm, retriever, chunks: list[dict] | None = None, *
     messages: list[dict] = [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": user}]
     events: list[dict] = []
     shown: dict[str, dict] = {}  # chunk đã thật sự đưa cho model (context cuối = hợp các lượt)
-    usage = {"prompt_tokens": 0, "completion_tokens": 0}
+    usage = {"prompt_tokens": 0, "completion_tokens": 0, "cost": 0.0}
     n_search, llm_calls, t0 = 0, 0, time.perf_counter()
 
     def call(tool_choice: str = "auto") -> dict:
         nonlocal llm_calls
         llm_calls += 1
         resp = llm.chat(messages, tools=[SEARCH_TOOL], tool_choice=tool_choice)
+        u = resp.get("usage") or {}
         for k in usage:
-            usage[k] += (resp.get("usage") or {}).get(k, 0) or 0
+            usage[k] += u.get(k, 0) or 0
         return resp["choices"][0]["message"]
 
     def finish(status: str, answer: str, citations: list[str], extra: dict | None = None) -> dict:

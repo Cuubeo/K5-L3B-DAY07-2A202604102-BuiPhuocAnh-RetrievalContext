@@ -9,3 +9,7 @@ __pycache__/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+# Thử thách nâng cao (không thực hiện) — dữ liệu tạm, không nộp
+data/advanced/
+src/advanced/

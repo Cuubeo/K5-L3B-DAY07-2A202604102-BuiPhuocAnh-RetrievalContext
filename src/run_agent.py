@@ -77,7 +77,7 @@ def main() -> None:
                                       sum(t["status"] == "answered" for t in ok)),
         "invalid_citations_total": sum(len(t.get("invalid_citations", [])) for t in ok),
         "median_latency_s": statistics.median(t["latency_s"] for t in ok) if ok else None,
-        "tokens": {k: sum(t["usage"][k] for t in traces) for k in ("prompt_tokens", "completion_tokens")},
+        "tokens": {k: sum(t["usage"].get(k) or 0 for t in traces) for k in ("prompt_tokens", "completion_tokens")},
         "cost_usd": round(sum(t["cost_usd"] for t in traces), 4),
         "note": "answer_grade, citation_support, abstention_correct phải tự chấm trong reviews.json",
     }
