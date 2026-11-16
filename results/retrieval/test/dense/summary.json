@@ -1,0 +1,25 @@
+{
+ "method": "dense",
+ "split": "test",
+ "config": {
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "model_path": "C:\\VinAI\\K5-L3B-Day06-2A202604102-DataIngestionEngineering\\starter\\models\\paraphrase-multilingual-MiniLM-L12-v2",
+  "dimensions": 384,
+  "normalize": true,
+  "index": "pgvector table chunks, strategy=E, cosine <=>, exact"
+ },
+ "top_k": 3,
+ "budget_chars": 800,
+ "neighbors": 0,
+ "n_answerable": 5,
+ "n_abstain": 2,
+ "hit1": "4/5 (80%)",
+ "evidence_hit3": "5/5 (100%)",
+ "context_evidence_rate": "5/5 (100%)",
+ "misses_hit3": [],
+ "errors": [],
+ "avg_context_chars": 659.7,
+ "median_ms": 57.41,
+ "cost_usd": 0,
+ "run": "dense"
+}

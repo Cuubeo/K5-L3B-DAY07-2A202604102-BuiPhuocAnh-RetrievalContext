@@ -1,0 +1,30 @@
+[
+ {
+  "query_id": "q01",
+  "answerable": true,
+  "status": "answered",
+  "answer": "ProgramSelectBench contains a combined total of 16,977 agent-generated and human-engineered SSL programs [agentssl-2611.17323v1:p1:para350:5].",
+  "citations": [
+   "agentssl-2611.17323v1:p1:para350:5"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q02",
+  "answerable": true,
+  "status": "answered",
+  "answer": "Agents exceed the strongest human-engineered SSL baselines in 8 out of 12 settings, achieving improvements of up to +21.8% [agentssl-2611.17323v1:p1:para350:3].",
+  "citations": [
+   "agentssl-2611.17323v1:p1:para350:3"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ }
+]

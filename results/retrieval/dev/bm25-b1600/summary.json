@@ -1,0 +1,31 @@
+{
+ "method": "bm25",
+ "split": "dev",
+ "config": {
+  "k1": 1.5,
+  "b": 0.75,
+  "tokenizer": "casefold NFC regex \\w+ (giữ số thập phân/dấu nối)",
+  "stopwords": null,
+  "n_chunks": 436
+ },
+ "top_k": 3,
+ "budget_chars": 1600,
+ "neighbors": 0,
+ "n_answerable": 20,
+ "n_abstain": 2,
+ "hit1": "13/20 (65%)",
+ "evidence_hit3": "15/20 (75%)",
+ "context_evidence_rate": "15/20 (75%)",
+ "misses_hit3": [
+  "q08",
+  "q10",
+  "q14",
+  "t18",
+  "t20"
+ ],
+ "errors": [],
+ "avg_context_chars": 1031.3,
+ "median_ms": 1.61,
+ "cost_usd": 0,
+ "run": "bm25-b1600"
+}

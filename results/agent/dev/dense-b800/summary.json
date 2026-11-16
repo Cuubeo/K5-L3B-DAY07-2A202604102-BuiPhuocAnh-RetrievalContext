@@ -1,0 +1,42 @@
+{
+ "run": "dense-b800",
+ "split": "dev",
+ "model": "openai/gpt-4o-mini",
+ "base_url": "https://openrouter.ai/api/v1",
+ "config": {
+  "method": "dense",
+  "retriever": {
+   "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+   "model_path": "C:\\VinAI\\K5-L3B-Day06-2A202604102-DataIngestionEngineering\\starter\\models\\paraphrase-multilingual-MiniLM-L12-v2",
+   "dimensions": 384,
+   "normalize": true,
+   "index": "pgvector table chunks, strategy=E, cosine <=>, exact"
+  },
+  "top_k": 3,
+  "budget_chars_per_search": 800,
+  "neighbors": 0,
+  "max_searches": 4,
+  "temperature": 0.0
+ },
+ "n": 22,
+ "errors": [],
+ "tool_use": "22/22 (100%)",
+ "searches_distribution": {
+  "1": 14,
+  "2": 2,
+  "3": 3,
+  "4": 3
+ },
+ "context_evidence_rate": "16/20 (80%)",
+ "answered_answerable": "19/20 (95%)",
+ "abstained_unanswerable": "2/2 (100%)",
+ "answers_with_citation": "19/19 (100%)",
+ "invalid_citations_total": 0,
+ "median_latency_s": 6.08,
+ "tokens": {
+  "prompt_tokens": 29060,
+  "completion_tokens": 1973
+ },
+ "cost_usd": 0.0,
+ "note": "answer_grade, citation_support, abstention_correct phải tự chấm trong reviews.json"
+}

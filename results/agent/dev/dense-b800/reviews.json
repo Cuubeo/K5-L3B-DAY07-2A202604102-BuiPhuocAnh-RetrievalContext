@@ -1,0 +1,195 @@
+[
+ {
+  "query_id": "q01",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "16,977 đúng; trích p18 'consisting of 16,977 evaluated program instances' (evidence thay thế hợp lệ)."
+ },
+ {
+  "query_id": "q02",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q03",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q04",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q05",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q06",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q07",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q08",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q09",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q10",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 0,
+  "citation_support": [
+   false
+  ],
+  "reason": "Sai: trả lời GPT-5.4. Citation p20 c16 nói GPT-5.4 là LLM-as-judge, không nói về độ đa dạng. Context không có p9 c6."
+ },
+ {
+  "query_id": "q11",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q12",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q13",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q14",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 0,
+  "citation_support": [],
+  "reason": "Từ chối câu có đáp án (evidence ở code p34 không được tìm thấy sau 4 lượt)."
+ },
+ {
+  "query_id": "q15",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 1,
+  "citation_support": [
+   false
+  ],
+  "reason": "Giá trị đúng (torch.optim.AdamW) nhưng citation p27 c9 thuộc Improve operator prompt, không phải draft prompt -> không chứng minh điều kiện 'draft'."
+ },
+ {
+  "query_id": "t16",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "t17",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "t18",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 0,
+  "citation_support": [
+   false,
+   false
+  ],
+  "reason": "Sai: trả lời MCTS. p5 c12 chỉ mô tả các chiến lược; p9 c9 nói MCTS 'lies between' -> mâu thuẫn với câu trả lời."
+ },
+ {
+  "query_id": "t19",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "t20",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng: p26 c13 nằm trong 'Debug operator prompt' (bắt đầu p26 c12) và nói không đổi core idea/methodology, chỉ sửa bug. Gold thiếu evidence thay thế này."
+ },
+ {
+  "query_id": "n01",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "abstention_correct": true,
+  "citation_support": [],
+  "reason": "Từ chối bằng INSUFFICIENT_EVIDENCE, không thêm khẳng định."
+ },
+ {
+  "query_id": "n02",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "abstention_correct": true,
+  "citation_support": [],
+  "reason": "Từ chối bằng INSUFFICIENT_EVIDENCE, không thêm khẳng định."
+ }
+]

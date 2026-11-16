@@ -1,0 +1,369 @@
+[
+ {
+  "query_id": "t21",
+  "split": "test",
+  "answerable": true,
+  "question": "Which test harness do the authors use to study agent design choices in the SSL setting?",
+  "filter": null,
+  "method": "dense",
+  "top_k": 3,
+  "budget_chars": 800,
+  "neighbors": 0,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p3:para350:4",
+    "page": 3,
+    "score": 0.695885,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "2",
+    "text": "Because these agents combine many interacting design choices, controlled evaluation frameworks are important for isolating the effects of search policies, feedback signals, and other components [50, 57]. We use Aira-Dojo [50] as such a test harness, providing a consistent environment for studying these design choices in our SSL setting."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p5:para350:5",
+    "page": 5,
+    "score": 0.695748,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "3",
+    "text": "3.3 Agent Design Space\n\nThe AgentSSL formulation exposes several design choices that can affect how agents explore the space of SSL programs. We focus on three components that are especially relevant to our study: the fitness function, the search strategy, and the language model."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p1:para350:9",
+    "page": 1,
+    "score": 0.615524,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "1",
+    "text": "SSL research seeks to reduce annotation effort but requires human engineering to deploy. We study whether AgentSSLcan reduce both costs."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p3:para350:4",
+   "agentssl-2611.17323v1:p5:para350:5"
+  ],
+  "context_chars": 760,
+  "elapsed_ms": 67.36,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "t22",
+  "split": "test",
+  "answerable": true,
+  "question": "What fixed set of program transformation operators does the agent use during search?",
+  "filter": null,
+  "method": "dense",
+  "top_k": 3,
+  "budget_chars": 800,
+  "neighbors": 0,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p4:para350:14",
+    "page": 4,
+    "score": 0.667009,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "3",
+    "text": "Concretely, an AgentSSL search procedure is specified by the tuple (F, πsel,O, πop, M),where F is a fitness function, πsel is a node selection policy, O is a set of program transformation operators, πop is an operator selection policy, and M is the LLM. We use a fixed operator set with Draft, Debug, Improve, and Analyze operators (Appendix H.1).\n\n4"
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p4:para350:13",
+    "page": 4,
+    "score": 0.645996,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "3",
+    "text": "At each iteration, the agent selects one or more existing programs, applies an operator to produce a new candidate program, evaluates it using a feedback signal, and adds the resulting node to the search graph."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p25:para350:10",
+    "page": 25,
+    "score": 0.629502,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "H",
+    "text": "H Agent Prompts\n\nH.1 Operators\n\nOur greedy search makes use of 4 operators: draft H.1, improve H.1 and debug H.1, analyze H.1. The prompts for the same are referenced here."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p4:para350:14",
+   "agentssl-2611.17323v1:p4:para350:13"
+  ],
+  "context_chars": 704,
+  "elapsed_ms": 67.76,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "t23",
+  "split": "test",
+  "answerable": true,
+  "question": "How is the label budget (number of iterations) for each active selection algorithm determined on ProgramSelectBench?",
+  "filter": null,
+  "method": "dense",
+  "top_k": 3,
+  "budget_chars": 800,
+  "neighbors": 0,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p19:para350:8",
+    "page": 19,
+    "score": 0.788716,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "C",
+    "text": "The number of iterations, or label budget, provided for each active selection algorithm and task is defined by: min(25,# of classes×# of training images per class) The main selection results are shown in Figure 9."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p18:para350:3",
+    "page": 18,
+    "score": 0.740699,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "C",
+    "text": "We compile and releaseProgramSelectBench, a precomputed benchmark for unsupervised and active program selection consisting of 16,977 evaluated program instances across six classification datasets. ProgramSelectBench is constructed from the programs evaluated in AgentSSL, including both agent-generated programs and human-designed baselines."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p19:para350:6",
+    "page": 19,
+    "score": 0.734035,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "C",
+    "text": "C.3 Selection Results\n\nForunsupervised selection, we evaluate all the unsupervised metrics discussed in Section A.2 on ProgramSelectBench. Foractive selection, we evaluate several active selection methods including ActiveTesting [28], VMA [34], CODA [27], ModelSelector [38], and an IID baseline."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p19:para350:8",
+   "agentssl-2611.17323v1:p18:para350:3"
+  ],
+  "context_chars": 700,
+  "elapsed_ms": 44.68,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "t24",
+  "split": "test",
+  "answerable": true,
+  "question": "Which model is used in the LLM-as-judge pipeline that analyzes agent-generated programs?",
+  "filter": {
+   "section": "D"
+  },
+  "method": "dense",
+  "top_k": 3,
+  "budget_chars": 800,
+  "neighbors": 0,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p20:para350:16",
+    "page": 20,
+    "score": 0.787978,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "D",
+    "text": "D LLM-as-Judge Details and Results\n\nWe use an LLM-as-judge pipeline to analyze the programs produced during agent search at scale with GPT-5.4."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p22:para350:7",
+    "page": 22,
+    "score": 0.651047,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "D",
+    "text": "D.2 Prompt\n\nThe prompt used for the LLM-as-judge pipeline is shown below.\n\nLLM-As-Judge Analysis Prompt \"\"\" You are an expert in data-efficient machine learning, semi-supervised learning, and program analysis. Given a program, extract concise and accurate descriptors of:\n\n1. Models used:"
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p20:para350:17",
+    "page": 20,
+    "score": 0.582208,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "D",
+    "text": "Given a program as input, the judge extracts: (i) the models used, (ii) the high-level SSL method groups represented by the program, (iii) implementation-level details, (iv) whether the program performs training, and (v) a short rationale summarizing the previous choices."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p20:para350:16",
+   "agentssl-2611.17323v1:p22:para350:7"
+  ],
+  "context_chars": 578,
+  "elapsed_ms": 57.41,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "t25",
+  "split": "test",
+  "answerable": true,
+  "question": "In the example AgentSSL prompt for DTD 3-shot, how many labeled training images and how many unlabeled datapoints does the agent receive?",
+  "filter": null,
+  "method": "dense",
+  "top_k": 3,
+  "budget_chars": 800,
+  "neighbors": 0,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p29:para350:6",
+    "page": 29,
+    "score": 0.712193,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "H",
+    "text": "vided for an example AgentSSL rollout for dataset DTD. The prompt includes task specific description including the feedback metric (in objective, model interface and usage section) and dataset specific description (in the dataset specification section). The above example is for dataset DTD for the 3-shot partition."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p28:para350:14",
+    "page": 28,
+    "score": 0.690577,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "H",
+    "text": "Your training dataset contains 3 images per class for a total of just 141 images. Your unlabeled dataset has 1739 datapoints.\n\n# Model Interface You MUST use the provided model builder.\n\n14"
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p32:para350:4",
+    "page": 32,
+    "score": 0.687664,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "H",
+    "text": "Your training dataset contains 3 images per class for a total of just 141 images. Your unlabeled dataset has 1739 datapoints.\n\n# Model Interface You MUST use the provided model builder.\n\n1. Choose backbone:\n\nnet_name \\in { \"timm/vit_base_patch16_clip_224.openai\", \"timm/vit_base_patch14_reg4_dinov2.lvd142m\" } 2. Create PEFT config:"
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p29:para350:6",
+   "agentssl-2611.17323v1:p28:para350:14"
+  ],
+  "context_chars": 652,
+  "elapsed_ms": 48.32,
+  "error": null,
+  "hit1": false,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "n03",
+  "split": "test",
+  "answerable": false,
+  "question": "How well does AgentSSL perform on text classification tasks?",
+  "filter": null,
+  "method": "dense",
+  "top_k": 3,
+  "budget_chars": 800,
+  "neighbors": 0,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p18:para350:9",
+    "page": 18,
+    "score": 0.609075,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "C",
+    "text": "We organize ProgramSelectBench into 35 selection tasks corresponding to the dataset, shot, and evaluation settings considered in AgentSSL. Each task contains all evaluated program instances for the corresponding setting, including both agent-generated programs and human-designed baselines. Table 8 summarizes the number of programs in each task."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p25:para350:0",
+    "page": 25,
+    "score": 0.602215,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "F",
+    "text": "We execute both AgentSL and AgentSSL using a greedy search policy and noisy validation feedback where 20% of the data provided to the agent is set aside for validation. We run each of these agents once on each of the three random splits."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p10:para350:6",
+    "page": 10,
+    "score": 0.590979,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "8",
+    "text": "The similar performance of AgentSL and AgentSSL across both domains also suggests that unlabeled data is not always the most valuable source of improvement. In practical settings where the utility of SSL is uncertain, strong supervised design choices may be as important as more exploratory strategies that leverage unlabeled data."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p18:para350:9",
+   "agentssl-2611.17323v1:p25:para350:0"
+  ],
+  "context_chars": 729,
+  "elapsed_ms": 41.93,
+  "error": null
+ },
+ {
+  "query_id": "n04",
+  "split": "test",
+  "answerable": false,
+  "question": "What is the GitHub URL of the AgentSSL source code?",
+  "filter": null,
+  "method": "dense",
+  "top_k": 3,
+  "budget_chars": 800,
+  "neighbors": 0,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p31:para350:10",
+    "page": 31,
+    "score": 0.513105,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "H",
+    "text": "Example Agent SL prompt # Objective 17"
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p6:para350:6",
+    "page": 6,
+    "score": 0.512497,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "4",
+    "text": "Agent Implementation.We build on AIRA-Dojo [ 50] as an agentic program-search framework and introduce a new SSL task interface within it. Agents receive a task description together with the labeled set L and unlabeled set U, and propose executable programs that map these data inputs to a predictor h (Figure 2)."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p4:para350:9",
+    "page": 4,
+    "score": 0.489239,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "3",
+    "text": "We formulate AgentSSL as an agentic search problem over the space of SSL programs, comprising two core challenges:(1) program discovery, where an agent iteratively generates and refines candidate programs under limited feedback, and(2) program selection, where a single program must be identified from the discovered candidates for deployment under l"
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p31:para350:10",
+   "agentssl-2611.17323v1:p6:para350:6"
+  ],
+  "context_chars": 495,
+  "elapsed_ms": 64.89,
+  "error": null
+ }
+]

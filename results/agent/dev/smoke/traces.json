@@ -1,0 +1,132 @@
+[
+ {
+  "query_id": "q01",
+  "split": "dev",
+  "answerable": true,
+  "question": "How many programs does ProgramSelectBench contain in total?",
+  "status": "answered",
+  "answer": "ProgramSelectBench contains a combined total of 16,977 agent-generated and human-engineered SSL programs [agentssl-2611.17323v1:p1:para350:5].",
+  "citations": [
+   "agentssl-2611.17323v1:p1:para350:5"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "bm25",
+    "query": "ProgramSelectBench total number of programs",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p18:para350:1",
+      "page": 18,
+      "score": 14.940574
+     },
+     {
+      "id": "agentssl-2611.17323v1:p1:para350:5",
+      "page": 1,
+      "score": 10.538945
+     },
+     {
+      "id": "agentssl-2611.17323v1:p18:para350:9",
+      "page": 18,
+      "score": 9.965148
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p18:para350:0",
+     "agentssl-2611.17323v1:p18:para350:1",
+     "agentssl-2611.17323v1:p18:para350:2",
+     "agentssl-2611.17323v1:p1:para350:4",
+     "agentssl-2611.17323v1:p1:para350:5",
+     "agentssl-2611.17323v1:p1:para350:6"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p18:para350:0",
+   "agentssl-2611.17323v1:p18:para350:1",
+   "agentssl-2611.17323v1:p18:para350:2",
+   "agentssl-2611.17323v1:p1:para350:4",
+   "agentssl-2611.17323v1:p1:para350:5",
+   "agentssl-2611.17323v1:p1:para350:6"
+  ],
+  "context_chars": 1077,
+  "usage": {
+   "prompt_tokens": 1130,
+   "completion_tokens": 59
+  },
+  "cost_usd": 0.0,
+  "latency_s": 4.74,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "q02",
+  "split": "dev",
+  "answerable": true,
+  "question": "In how many of the 12 settings do agents beat the strongest human-engineered SSL baselines, and by up to how much?",
+  "status": "answered",
+  "answer": "Agents exceed the strongest human-engineered SSL baselines in 8 out of 12 settings, achieving improvements of up to +21.8% [agentssl-2611.17323v1:p1:para350:3].",
+  "citations": [
+   "agentssl-2611.17323v1:p1:para350:3"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "bm25",
+    "query": "agents beat the strongest human-engineered SSL baselines settings",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p1:para350:3",
+      "page": 1,
+      "score": 21.031667
+     },
+     {
+      "id": "agentssl-2611.17323v1:p10:para350:9",
+      "page": 10,
+      "score": 14.133302
+     },
+     {
+      "id": "agentssl-2611.17323v1:p2:para350:15",
+      "page": 2,
+      "score": 11.598038
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p1:para350:2",
+     "agentssl-2611.17323v1:p1:para350:3",
+     "agentssl-2611.17323v1:p1:para350:4",
+     "agentssl-2611.17323v1:p10:para350:8",
+     "agentssl-2611.17323v1:p10:para350:9"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p1:para350:2",
+   "agentssl-2611.17323v1:p1:para350:3",
+   "agentssl-2611.17323v1:p1:para350:4",
+   "agentssl-2611.17323v1:p10:para350:8",
+   "agentssl-2611.17323v1:p10:para350:9"
+  ],
+  "context_chars": 1129,
+  "usage": {
+   "prompt_tokens": 1029,
+   "completion_tokens": 72
+  },
+  "cost_usd": 0.0,
+  "latency_s": 6.07,
+  "invalid_citations": [],
+  "context_hit": true
+ }
+]

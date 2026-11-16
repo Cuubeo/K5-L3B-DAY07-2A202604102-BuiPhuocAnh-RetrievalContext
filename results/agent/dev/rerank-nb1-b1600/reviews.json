@@ -1,0 +1,195 @@
+[
+ {
+  "query_id": "q01",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q02",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q03",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q04",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q05",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q06",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q07",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q08",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng; câu thêm về 'metrics encode assumptions' được p7 c4 hỗ trợ."
+ },
+ {
+  "query_id": "q09",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q10",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng: Gemini-3.1 có diversity cao hơn GPT-5.4 (p9 c6)."
+ },
+ {
+  "query_id": "q11",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q12",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q13",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "q14",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 0,
+  "citation_support": [],
+  "reason": "Từ chối câu có đáp án (evidence ở code p34 không được tìm thấy sau 4 lượt)."
+ },
+ {
+  "query_id": "q15",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng; p26 c1 thuộc draft operator prompt."
+ },
+ {
+  "query_id": "t16",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "t17",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "t18",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng: Evolutionary có diversity cao nhất (p9 c8, có trong context nhờ neighbor)."
+ },
+ {
+  "query_id": "t19",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "t20",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng: p26 c13 nằm trong 'Debug operator prompt'. Gold thiếu evidence thay thế này."
+ },
+ {
+  "query_id": "n01",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "abstention_correct": true,
+  "citation_support": [],
+  "reason": "Từ chối bằng INSUFFICIENT_EVIDENCE, không thêm khẳng định."
+ },
+ {
+  "query_id": "n02",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "abstention_correct": true,
+  "citation_support": [],
+  "reason": "Từ chối bằng INSUFFICIENT_EVIDENCE, không thêm khẳng định."
+ }
+]

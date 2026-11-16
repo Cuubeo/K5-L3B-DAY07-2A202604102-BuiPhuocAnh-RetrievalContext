@@ -1,0 +1,64 @@
+[
+ {
+  "query_id": "t21",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "t22",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng; p25 c10 (H.1) liệt kê 4 operator draft/improve/debug/analyze — evidence tương đương p4 c14."
+ },
+ {
+  "query_id": "t23",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "t24",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "t25",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng 141 và 1739; p31 c2 là prompt AgentSSL DTD 3-shot khác (noisy validation) có cùng câu — evidence tương đương p28 c14."
+ },
+ {
+  "query_id": "n03",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "abstention_correct": false,
+  "citation_support": [
+   false,
+   false
+  ],
+  "reason": "KHÔNG từ chối: khẳng định AgentSSL mạnh ở 'text classification' — bịa. Citation p6 c14 và p25 c8 nói về phân loại ẢNH, không hỗ trợ."
+ },
+ {
+  "query_id": "n04",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "abstention_correct": true,
+  "citation_support": [],
+  "reason": "Từ chối đúng: không có GitHub URL."
+ }
+]

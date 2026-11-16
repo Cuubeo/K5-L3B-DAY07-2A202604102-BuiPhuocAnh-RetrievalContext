@@ -1,0 +1,98 @@
+[
+ {
+  "query_id": "t21",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The authors use Aira-Dojo as the test harness to study agent design choices in the SSL setting [agentssl-2611.17323v1:p3:para350:4].",
+  "citations": [
+   "agentssl-2611.17323v1:p3:para350:4"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "t22",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The agent uses a fixed set of four program transformation operators during search: Draft, Improve, Debug, and Analyze [agentssl-2611.17323v1:p25:para350:10].",
+  "citations": [
+   "agentssl-2611.17323v1:p25:para350:10"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "t23",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The label budget (number of iterations) for each active selection algorithm on ProgramSelectBench is determined by the formula: min(25, # of classes × # of training images per class) [agentssl-2611.17323v1:p19:para350:8].",
+  "citations": [
+   "agentssl-2611.17323v1:p19:para350:8"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "t24",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The model used in the LLM-as-judge pipeline that analyzes agent-generated programs is GPT-5.4 [agentssl-2611.17323v1:p20:para350:16].",
+  "citations": [
+   "agentssl-2611.17323v1:p20:para350:16"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "t25",
+  "answerable": true,
+  "status": "answered",
+  "answer": "In the example AgentSSL prompt for DTD 3-shot, the agent receives 141 labeled training images (3 images per class) and 1739 unlabeled datapoints [agentssl-2611.17323v1:p31:para350:2].",
+  "citations": [
+   "agentssl-2611.17323v1:p31:para350:2"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "n03",
+  "answerable": false,
+  "status": "answered",
+  "answer": "AgentSSL demonstrates competitive performance on text classification tasks, particularly when programs are selected using oracle test performance. It achieves notable accuracy across various datasets and shot settings, as indicated in the results. For instance, in a comparison with strong SSL baselines, AgentSSL's performance is highlighted in Table 1 of the results section, showing its effectiveness in discovering programs that perform well in text classification tasks [agentssl-2611.17323v1:p6:para350:14].\n\nAdditionally, a specific comparison between AgentSL and AgentSSL across datasets and label settings shows that AgentSSL achieves accuracy rates such as 64.71%, 72.15%, and 76.93% under different conditions [agentssl-2611.17323v1:p25:para350:8]. Overall, these results indicate that AgentSSL is a strong contender in the realm of text classification.",
+  "citations": [
+   "agentssl-2611.17323v1:p6:para350:14",
+   "agentssl-2611.17323v1:p25:para350:8"
+  ],
+  "citation_support": [
+   null,
+   null
+  ],
+  "abstention_correct": null,
+  "reason": ""
+ },
+ {
+  "query_id": "n04",
+  "answerable": false,
+  "status": "abstain",
+  "answer": "INSUFFICIENT_EVIDENCE: No GitHub URL provided.",
+  "citations": [],
+  "citation_support": [],
+  "abstention_correct": null,
+  "reason": ""
+ }
+]

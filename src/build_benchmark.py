@@ -24,6 +24,14 @@ def load(p):
 def main():
     chunks = load("data/day6/chunks.json")
     qs = load("data/day6/questions_day6.json") + load("data/benchmark/new_questions.json")
+    # Sửa nhãn có ghi lý do (chỉ trên dev): mỗi fix thêm MỘT group evidence mới cho câu hỏi.
+    by_id = {q["id"]: q for q in qs}
+    for fix in load("data/benchmark/gold_fixes.json"):
+        q = by_id[fix["id"]]
+        assert q["split"] == "dev", f"{fix['id']}: chỉ sửa nhãn dev"
+        new_group = max(g.get("group", 0) for g in q["gold"]) + 1
+        q["gold"] += [{**g, "group": new_group} for g in fix["add_gold"]]
+        q.setdefault("label_fixes", []).append(fix["reason"])
     ids = [q["id"] for q in qs]
     assert len(ids) == len(set(ids)), "trùng ID câu hỏi"
     for q in qs:

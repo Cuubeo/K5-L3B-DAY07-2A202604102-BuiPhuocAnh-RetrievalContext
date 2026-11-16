@@ -1,0 +1,1226 @@
+[
+ {
+  "query_id": "q01",
+  "split": "dev",
+  "answerable": true,
+  "question": "How many programs does ProgramSelectBench contain in total?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p1:para350:5",
+    "page": 1,
+    "score": 9.399459,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": null,
+    "text": "To systematically study this bottleneck, we introduce ProgramSelectBench, a large-scale benchmark with a combined total of 16,977 agent-generated and human-engineered SSL programs, and evaluate both unsupervised and active program selection methods."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p18:para350:1",
+    "page": 18,
+    "score": 9.17898,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "B",
+    "text": "Table 8: ProgramSelectBench tasks and number of programs in each task."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p18:para350:3",
+    "page": 18,
+    "score": 6.881416,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "C",
+    "text": "We compile and releaseProgramSelectBench, a precomputed benchmark for unsupervised and active program selection consisting of 16,977 evaluated program instances across six classification datasets. ProgramSelectBench is constructed from the programs evaluated in AgentSSL, including both agent-generated programs and human-designed baselines."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p1:para350:4",
+   "agentssl-2611.17323v1:p1:para350:5",
+   "agentssl-2611.17323v1:p1:para350:6",
+   "agentssl-2611.17323v1:p18:para350:0",
+   "agentssl-2611.17323v1:p18:para350:1",
+   "agentssl-2611.17323v1:p18:para350:2"
+  ],
+  "context_chars": 1513,
+  "elapsed_ms": 1.34,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "q02",
+  "split": "dev",
+  "answerable": true,
+  "question": "In how many of the 12 settings do agents beat the strongest human-engineered SSL baselines, and by up to how much?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p1:para350:3",
+    "page": 1,
+    "score": 38.103426,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": null,
+    "text": "We find that even under weak feedback and matched compute, agents can synthesize code that combines and adapts established SSL techniques, exceeding the strongest human-engineered baselines in 8 of 12 settings by up to +21.8%."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p8:para350:4",
+    "page": 8,
+    "score": 20.615154,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "6",
+    "text": "6.2 How Do Agents Use Unlabeled Data?\n\nTo qualitatively analyze the agent’s search space at scale, we use an LLM-as-judge pipeline to categorize the SSL strategies implemented across generated programs [ 61, 51]. Our goal is to characterize which methods agents discover and how broadly they explore the SSL design space."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p10:para350:9",
+    "page": 10,
+    "score": 20.060729,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "9",
+    "text": "9 Discussion and Conclusion\n\nWe introduced AgentSSL, which formulates semi-supervised learning as agentic program search. Under label scarcity, MLE agents generate SSL programs that beat tuned human baselines in 8 of 12 settings when the best program is known, but neither agents nor human pipelines can reliably pick that program without labels."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p1:para350:2",
+   "agentssl-2611.17323v1:p1:para350:3",
+   "agentssl-2611.17323v1:p1:para350:4",
+   "agentssl-2611.17323v1:p8:para350:3",
+   "agentssl-2611.17323v1:p8:para350:4"
+  ],
+  "context_chars": 1387,
+  "elapsed_ms": 2.85,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "q03",
+  "split": "dev",
+  "answerable": true,
+  "question": "Into which two sub-problems do the authors split the task of applying SSL with agents?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p8:para350:4",
+    "page": 8,
+    "score": 12.426155,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "6",
+    "text": "6.2 How Do Agents Use Unlabeled Data?\n\nTo qualitatively analyze the agent’s search space at scale, we use an LLM-as-judge pipeline to categorize the SSL strategies implemented across generated programs [ 61, 51]. Our goal is to characterize which methods agents discover and how broadly they explore the SSL design space."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p2:para350:7",
+    "page": 2,
+    "score": 11.665842,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "1",
+    "text": "We decompose this problem into two core challenges:(1) program discovery, where agents must discover effective SSL programs under limited feedback, and(2) program selection, where a single program must be identified from the discovered candidates without a large labeled validation set."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p7:para350:12",
+    "page": 7,
+    "score": 10.296602,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "6",
+    "text": "6 Analysis\n\n6.1 Can Agents Leverage Unlabeled Data?\n\nWe first study whether the discovered SSL programs actually make use of unlabeled data. To do this, we fix the top-performing program discovered by AgentSSL and vary only the size of the unlabeled corpus at evaluation time."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p8:para350:3",
+   "agentssl-2611.17323v1:p8:para350:4",
+   "agentssl-2611.17323v1:p8:para350:5",
+   "agentssl-2611.17323v1:p2:para350:6",
+   "agentssl-2611.17323v1:p2:para350:7"
+  ],
+  "context_chars": 1491,
+  "elapsed_ms": 2.16,
+  "error": null,
+  "hit1": false,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "q04",
+  "split": "dev",
+  "answerable": true,
+  "question": "What does oracle performance measure when assessing program discovery?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p5:para350:3",
+    "page": 5,
+    "score": 16.774586,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "3",
+    "text": "Evaluation. We evaluate these two challenges separately. To assess program discovery, we measure oracle performance, defined as the test performance of the best program in the discovered pool, Q(A∗). This measures the quality of the best discovered solution, independent of our ability to select it."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p7:para350:3",
+    "page": 7,
+    "score": 13.854951,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "5",
+    "text": "When the metric is well correlated with test performance, much of the oracle performance is retained; when this alignment is weak, selection performance can degrade substantially. These results suggest that practical program selection is a major bottleneck for AgentSSL."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p6:para350:14",
+    "page": 6,
+    "score": 10.988231,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "5",
+    "text": "5 Results\n\nAcross datasets and shot settings, AgentSSL discovers programs that are competitive with strong SSL baselines when programs are selected using oracle test performance (Table 1)."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p5:para350:2",
+   "agentssl-2611.17323v1:p5:para350:3",
+   "agentssl-2611.17323v1:p5:para350:4",
+   "agentssl-2611.17323v1:p7:para350:2"
+  ],
+  "context_chars": 1415,
+  "elapsed_ms": 1.26,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "q05",
+  "split": "dev",
+  "answerable": true,
+  "question": "Which pretrained vision backbones were the agents restricted to in the image classification experiments?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p6:para350:8",
+    "page": 6,
+    "score": 21.558115,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "4",
+    "text": "Agent Details.To make agent-discovered programs directly comparable to the baselines, we constrain the agent search space in our image classification experiments. Agents thus only use CLIP ViT-B-16 and DINOv2-B backbones and are provided access to the same parameter-efficient fine-tuning library used in the baseline evaluations."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p5:para350:15",
+    "page": 5,
+    "score": 14.270154,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "4",
+    "text": "4 Experiment Design\n\nDatasets.We conduct our experiments using the image classification SSL setting from recent work on semi-supervised learning with foundation models [59]."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p32:para350:0",
+    "page": 32,
+    "score": 11.656327,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "H",
+    "text": "You are an AI agent tasked with implementing a **classification program** for an image dataset. Your goal is to train ( or otherwise derive) a classifier using the provided training dataset and produce **predicted labels for every image in the validation dataset**."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p6:para350:7",
+   "agentssl-2611.17323v1:p6:para350:8",
+   "agentssl-2611.17323v1:p6:para350:9",
+   "agentssl-2611.17323v1:p5:para350:14"
+  ],
+  "context_chars": 1500,
+  "elapsed_ms": 2.08,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "q06",
+  "split": "dev",
+  "answerable": true,
+  "question": "How long does each agent run last on the smaller datasets (DTD, RESISC45, KITTI), and on which GPU?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p6:para350:11",
+    "page": 6,
+    "score": 35.099903,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "4",
+    "text": "For the smaller datasets, DTD, RESISC45, and KITTI, we run each agent for 8 hours on an NVIDIA RTX 6000 Ada Generation GPU. For the remaining larger datasets, we run each agent for 15 hours on either an NVIDIA H100 GPU or an NVIDIA RTX 6000 Blackwell Max-Q GPU. For a comparison between baseline and agent compute costs, see Appendix B.2."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p16:para350:12",
+    "page": 16,
+    "score": 30.873056,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "A",
+    "text": "A.3 Total Compute\n\nWe scale the agent search budget according to the computational cost of the corresponding SSL baselines, since candidate evaluation time increases substantially with dataset size. For the smaller datasets (DTD, RESISC45, and KITTI), each agent run is allocated 8 GPU hours on an NVIDIA RTX 6000 Ada Generation GPU."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p16:para350:13",
+    "page": 16,
+    "score": 22.989556,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "A",
+    "text": "For the larger datasets, each run is allocated 15 GPU hours on either an NVIDIA H100 GPU or an NVIDIA RTX 6000 Blackwell Max-Q GPU."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p6:para350:10",
+   "agentssl-2611.17323v1:p6:para350:11",
+   "agentssl-2611.17323v1:p6:para350:12",
+   "agentssl-2611.17323v1:p16:para350:11",
+   "agentssl-2611.17323v1:p16:para350:13"
+  ],
+  "context_chars": 1484,
+  "elapsed_ms": 2.33,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "q07",
+  "split": "dev",
+  "answerable": true,
+  "question": "Under what condition is it better to spend labels on program selection rather than on training?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p10:para350:10",
+    "page": 10,
+    "score": 17.655941,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "9",
+    "text": "We also introducedProgramSelectBench(Appendix C), which makes this selection problem measurable, and our results show that when unsupervised metrics fail, labels spent on selection buy more accuracy than the same labels spent on training."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p7:para350:8",
+    "page": 7,
+    "score": 17.594775,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "5",
+    "text": "When unsupervised metrics fail, active model selection offers a promising alternative by using labels for selection. Under a fixed budget, we compare training on all labels with unsupervised selection against splitting labels evenly between training and active selection (Table 3)."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p20:para350:2",
+    "page": 20,
+    "score": 13.66436,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "C",
+    "text": "For example, on the RETINO (40-shot) noisy validation task, both CODA and ModelSelector get to zero regret with less than 25 labels, but after 40 labels, they suddenly select a program with 30% worse accuracy."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p10:para350:9",
+   "agentssl-2611.17323v1:p10:para350:10",
+   "agentssl-2611.17323v1:p10:para350:11",
+   "agentssl-2611.17323v1:p7:para350:7"
+  ],
+  "context_chars": 1401,
+  "elapsed_ms": 2.02,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "q08",
+  "split": "dev",
+  "answerable": true,
+  "question": "Why can metrics based on learned representations fail to tell agent-generated programs apart?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p7:para350:4",
+    "page": 7,
+    "score": 13.657748,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "5",
+    "text": "We provide a comprehensive evaluation of all unsupervised selection metrics on ProgramSelectBench in Appendix C. A limitation of unsupervised selection is that its metrics necessarily encode assumptions about what constitutes a good model. For example, several metrics assess properties of learned representations."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p2:para350:11",
+    "page": 2,
+    "score": 13.629638,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "1",
+    "text": "First, we find that unsupervised metrics enable effective selection when underlying assumptions hold. Second, when unsupervised metrics fail, actively allocating labels to program selection can outperform allocating them to training."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p15:para350:12",
+    "page": 15,
+    "score": 12.554896,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "A",
+    "text": "Unsupervised MetricsInspired by prior work [ 59], we use an ensemble of different unsupervised metrics as feedback for the agentic search. Since different unsupervised metrics capture different properties of the learned representations and predictions, an ensemble should be able to balance these biases.\n\n1"
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p7:para350:3",
+   "agentssl-2611.17323v1:p7:para350:4",
+   "agentssl-2611.17323v1:p7:para350:5",
+   "agentssl-2611.17323v1:p2:para350:10"
+  ],
+  "context_chars": 1463,
+  "elapsed_ms": 1.69,
+  "error": null,
+  "hit1": false,
+  "hit3": false,
+  "context_hit": true
+ },
+ {
+  "query_id": "q09",
+  "split": "dev",
+  "answerable": true,
+  "question": "Instead of training a classifier, what does the best Retinopathy program combine?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p8:para350:10",
+    "page": 8,
+    "score": 22.895477,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "6",
+    "text": "A particularly illustrative example appears onRetinopathy(Appendix J.1). The best program does not train a classifier; instead, it combines frozen DINOv2 features, nearest-neighbor evidence, class prototypes, and an explicit ordinal bias. These choices align naturally with diabetic retinopathy, where 8"
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p8:para350:6",
+    "page": 8,
+    "score": 11.107371,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "6",
+    "text": "The left panel of Figure 4 shows that agents explore a broad range of SSL paradigms and often combine multiple strategies within the same program."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p23:para350:8",
+    "page": 23,
+    "score": 10.657849,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "D",
+    "text": "- Keep the summary concise, accurate, and method-focused.\n\nTraining label guidelines:\n\n- \"yes\" if the program performs gradient-based training, fits a classifier, trains an adapter/head, updates a student model, performs linear probing, fits logistic regression/SVM/ridge classifiers, or learns parameters from data."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p8:para350:9",
+   "agentssl-2611.17323v1:p8:para350:10",
+   "agentssl-2611.17323v1:p8:para350:5",
+   "agentssl-2611.17323v1:p8:para350:6"
+  ],
+  "context_chars": 1342,
+  "elapsed_ms": 1.92,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "q10",
+  "split": "dev",
+  "answerable": true,
+  "question": "Which LLM backbone led agents to explore a more varied set of SSL strategies?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p8:para350:6",
+    "page": 8,
+    "score": 15.448898,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "6",
+    "text": "The left panel of Figure 4 shows that agents explore a broad range of SSL paradigms and often combine multiple strategies within the same program."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p8:para350:4",
+    "page": 8,
+    "score": 15.149698,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "6",
+    "text": "6.2 How Do Agents Use Unlabeled Data?\n\nTo qualitatively analyze the agent’s search space at scale, we use an LLM-as-judge pipeline to categorize the SSL strategies implemented across generated programs [ 61, 51]. Our goal is to characterize which methods agents discover and how broadly they explore the SSL design space."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p9:para350:4",
+    "page": 9,
+    "score": 12.970581,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "7",
+    "text": "A higher diversity score indicates that the agent explores a broader range of SSL strategies and implementation choices. Across experiments, we observe:different agent configurations often achieve comparable accuracy, but differ substantially in the diversity of SSL strategies they explore."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p8:para350:5",
+   "agentssl-2611.17323v1:p8:para350:6",
+   "agentssl-2611.17323v1:p8:para350:7",
+   "agentssl-2611.17323v1:p8:para350:3",
+   "agentssl-2611.17323v1:p8:para350:4"
+  ],
+  "context_chars": 1464,
+  "elapsed_ms": 1.97,
+  "error": null,
+  "hit1": false,
+  "hit3": false,
+  "context_hit": false
+ },
+ {
+  "query_id": "q11",
+  "split": "dev",
+  "answerable": true,
+  "question": "What search hyperparameters are used for the greedy strategy?",
+  "filter": {
+   "section": "A"
+  },
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p15:para350:6",
+    "page": 15,
+    "score": 17.271628,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "A",
+    "text": "A Agent Details\n\nA.1 Agent Hyperparameters\n\nThe MLE Agent search hyperparameters for each strategy are provided below:\n\n• Greedy:5 initial drafts, 5 improvement steps, debug probability of 1.0, and maximum debug depth of 5.\n\n• MCTS:5 children per expansion, UCT exploration constant of 0.25, and maximum debug depth of 20."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p15:para350:11",
+    "page": 15,
+    "score": 7.491093,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "A",
+    "text": "•KITTI: 5-shot and 10-shot both have 3-fold noisy validation Automatically determining the best k value for a task or even dynamically determining the resources used to reduce uncertainty in performance estimates during search is an interesting future research direction."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p16:para350:10",
+    "page": 16,
+    "score": 5.28943,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "A",
+    "text": "Each point is one non-buggy program generated during search, pooled across both shot settings and all three search seeds for each dataset. The x-axis is the program’s fitness score or feedback metric, the numerical score the agent received during search as feedback. The y-axis is its test accuracy averaged over three evaluation seeds."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p15:para350:5",
+   "agentssl-2611.17323v1:p15:para350:6",
+   "agentssl-2611.17323v1:p15:para350:7",
+   "agentssl-2611.17323v1:p15:para350:10"
+  ],
+  "context_chars": 1455,
+  "elapsed_ms": 0.79,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "q12",
+  "split": "dev",
+  "answerable": true,
+  "question": "How many folds of noisy validation are used for the CLEVR dataset?",
+  "filter": {
+   "section": "A"
+  },
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p15:para350:10",
+    "page": 15,
+    "score": 13.942714,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "A",
+    "text": "•RESISC45: 1-shot is not applicable for noisy validation and 2-shot has 2-fold validation\n\n•SUN397: 3-shot and 6-shot both have 3-fold noisy validation\n\n•Retinopathy: 40-shot and 80-shot both have 1-fold noisy validation\n\n•CLEVR: 10-shot has 5-fold and 20-shot has 4-fold noisy validation"
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p15:para350:11",
+    "page": 15,
+    "score": 10.580222,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "A",
+    "text": "•KITTI: 5-shot and 10-shot both have 3-fold noisy validation Automatically determining the best k value for a task or even dynamically determining the resources used to reduce uncertainty in performance estimates during search is an interesting future research direction."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p15:para350:8",
+    "page": 15,
+    "score": 10.012825,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "A",
+    "text": "A.2 Feedback Metric Details\n\nNoisy ValidationOne SSL feedback metric we test is a noisy validation metric. This is created by splitting the existing limited training set into train and validation. In order to manage variance due to limited size of the validation set, we perform k-fold noisy validation to get better signal."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p15:para350:9",
+   "agentssl-2611.17323v1:p15:para350:10",
+   "agentssl-2611.17323v1:p15:para350:11",
+   "agentssl-2611.17323v1:p15:para350:12"
+  ],
+  "context_chars": 1463,
+  "elapsed_ms": 0.79,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "q13",
+  "split": "dev",
+  "answerable": true,
+  "question": "Across how many labeled/unlabeled splits are the baselines rerun, and how does this differ from the original study?",
+  "filter": {
+   "section": "B"
+  },
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p17:para350:2",
+    "page": 17,
+    "score": 28.586673,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "B",
+    "text": "To reduce sensitivity to the particular labeled examples selected in the few-shot regime, we rerun every baseline across three independently sampled labeled/unlabeled splits for each dataset and shot setting. The original study reports results on a single labeled split."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p17:para350:3",
+    "page": 17,
+    "score": 17.093543,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "B",
+    "text": "For each seed, agents and baselines are evaluated on the same labeled and unlabeled split, so comparisons are paired under identical data conditions. We report results aggregated across the three seeds."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p17:para350:0",
+    "page": 17,
+    "score": 9.896047,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "B",
+    "text": "B Baseline Details\n\nB.1 Methods and Hyperparameters\n\nWe evaluate the same supervised and SSL baselines described in the main text. For all baselines, we follow the training protocol and hyperparameter search space from prior work [ 59], using the authors’ released implementation."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p17:para350:1",
+   "agentssl-2611.17323v1:p17:para350:2",
+   "agentssl-2611.17323v1:p17:para350:3",
+   "agentssl-2611.17323v1:p17:para350:4",
+   "agentssl-2611.17323v1:p17:para350:0"
+  ],
+  "context_chars": 1587,
+  "elapsed_ms": 0.78,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "q14",
+  "split": "dev",
+  "answerable": true,
+  "question": "In the top-performing Retinopathy program, what are the default alpha and number of iterations in the graph configuration?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p19:para350:8",
+    "page": 19,
+    "score": 18.212489,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "C",
+    "text": "The number of iterations, or label budget, provided for each active selection algorithm and task is defined by: min(25,# of classes×# of training images per class) The main selection results are shown in Figure 9."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p18:para350:12",
+    "page": 18,
+    "score": 14.13698,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "C",
+    "text": "Figure 8 illustrates the distributions of program accuracy across the benchmark tasks. The tasks vary in both the number of candidate programs and the distribution of their performance, providing a range of selection problems."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p19:para350:9",
+    "page": 19,
+    "score": 13.611138,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "C",
+    "text": "Similar to the results in Table 2, individual unsupervised metrics generally perform very poorly on all Retinopathy and KITTI tasks with some exceptions. We also see that even when dataset and shot are fixed, there is still high variance in the performance of unsupervised metrics across different program pools."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p19:para350:7",
+   "agentssl-2611.17323v1:p19:para350:8",
+   "agentssl-2611.17323v1:p19:para350:9",
+   "agentssl-2611.17323v1:p18:para350:11",
+   "agentssl-2611.17323v1:p18:para350:12"
+  ],
+  "context_chars": 1481,
+  "elapsed_ms": 2.78,
+  "error": null,
+  "hit1": false,
+  "hit3": false,
+  "context_hit": false
+ },
+ {
+  "query_id": "q15",
+  "split": "dev",
+  "answerable": true,
+  "question": "Which optimizer does the draft operator prompt tell the agent to use instead of the deprecated transformers version?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p27:para350:9",
+    "page": 27,
+    "score": 29.20994,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "H",
+    "text": "- Use`torch.optim.AdamW`(the recommended optimizer) instead of the deprecated`AdamW`from`transformers`.\n\n- Make sure to print relevant training related information like the loss, accuracy, etc.\n\n- As much as possible, keep the stdout clean."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p26:para350:1",
+    "page": 26,
+    "score": 22.815573,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "H",
+    "text": "- Prefer vectorized operations over Python loops when processing large datasets.\n\n- Use torch.optim.AdamW instead of the deprecated AdamW from transformers.\n\n- As much as possible, keep stdout clean.\n\n- Print relevant training information such as loss, accuracy, etc.\n\n- As this is the initial draft, prioritize speed in your solution."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p25:para350:10",
+    "page": 25,
+    "score": 13.695927,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "H",
+    "text": "H Agent Prompts\n\nH.1 Operators\n\nOur greedy search makes use of 4 operators: draft H.1, improve H.1 and debug H.1, analyze H.1. The prompts for the same are referenced here."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p27:para350:8",
+   "agentssl-2611.17323v1:p27:para350:9",
+   "agentssl-2611.17323v1:p27:para350:10",
+   "agentssl-2611.17323v1:p26:para350:0"
+  ],
+  "context_chars": 1457,
+  "elapsed_ms": 2.45,
+  "error": null,
+  "hit1": false,
+  "hit3": true,
+  "context_hit": false
+ },
+ {
+  "query_id": "t16",
+  "split": "dev",
+  "answerable": true,
+  "question": "Into how many selection tasks is ProgramSelectBench organized?",
+  "filter": {
+   "section": "C"
+  },
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p18:para350:9",
+    "page": 18,
+    "score": 11.4317,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "C",
+    "text": "We organize ProgramSelectBench into 35 selection tasks corresponding to the dataset, shot, and evaluation settings considered in AgentSSL. Each task contains all evaluated program instances for the corresponding setting, including both agent-generated programs and human-designed baselines. Table 8 summarizes the number of programs in each task."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p20:para350:15",
+    "page": 20,
+    "score": 7.672745,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "C",
+    "text": "4 2.7 5.7 6.4 2.7 4.4 7.4 5.2 6.0 9.4 0 10 20 30 40 50 60 70 80 Simple regret (%) Figure 9:Selection regret for both unsupervised selection metrics and active selection metrics across datasets and shot counts, for agent noisy validation tasks (left), agent unsupervised tasks (right), and baseline tasks (bottom)."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p18:para350:4",
+    "page": 18,
+    "score": 7.476432,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "C",
+    "text": "The benchmark provides a controlled setting for studying program selection independently of program discovery, allowing future work to evaluate selection strategies without the computational cost of generating and executing new programs. The benchmark is publicly available at https://huggingface.co/datasets/ethan-y-lin/ ProgramSelectBench."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p18:para350:8",
+   "agentssl-2611.17323v1:p18:para350:9",
+   "agentssl-2611.17323v1:p18:para350:10",
+   "agentssl-2611.17323v1:p20:para350:14",
+   "agentssl-2611.17323v1:p20:para350:16"
+  ],
+  "context_chars": 1503,
+  "elapsed_ms": 0.82,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "t17",
+  "split": "dev",
+  "answerable": true,
+  "question": "How much expert effort went into labeling the WildFin detection data, and how many boxes did it yield?",
+  "filter": {
+   "section": "F"
+  },
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p24:para350:9",
+    "page": 24,
+    "score": 23.195975,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "F",
+    "text": "WildFin [17]WildFin is an in-the-wild fish video behavior classification dataset that is derived from a real-world ecology pipeline. The detection artifact from there dataset was obtained by ecologists hand-labeling bounding boxes for three species of interest (requiring over 320 hours of expert effort, yielding 21,116 expert-labeled boxes)."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p24:para350:11",
+    "page": 24,
+    "score": 11.146333,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "F",
+    "text": "BuckTales [35]BuckTales is a UA V-based wildlife dataset focused on blackbuck monitoring and downstream multi-object tracking. The detection dataset contains approximately 24,000 bounding boxes across six object categories."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p24:para350:13",
+    "page": 24,
+    "score": 7.881014,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "F",
+    "text": "F.2 Experiment Details\n\nFor each dataset, we used three random seeds to randomly sample subsets of the full training sets (10% of all images for WildFin and 20% of all images for BuckTales). We execute the ecologist baseline program on all three of these random splits to produce the low-label domain expert baseline."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p24:para350:8",
+   "agentssl-2611.17323v1:p24:para350:9",
+   "agentssl-2611.17323v1:p24:para350:10",
+   "agentssl-2611.17323v1:p24:para350:11"
+  ],
+  "context_chars": 1301,
+  "elapsed_ms": 0.74,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "t18",
+  "split": "dev",
+  "answerable": true,
+  "question": "Which search strategy explored the broadest range of SSL approaches?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p9:para350:9",
+    "page": 9,
+    "score": 14.553191,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "7",
+    "text": "In contrast, greedy converges to narrower regions of the search space despite competitive accuracy, while MCTS lies between. These results suggest that under fixed compute budgets, the primary effect of the search strategy is not necessarily improving peak performance, but altering the breadth of SSL strategies explored during search."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p5:para350:5",
+    "page": 5,
+    "score": 9.413712,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "3",
+    "text": "3.3 Agent Design Space\n\nThe AgentSSL formulation exposes several design choices that can affect how agents explore the space of SSL programs. We focus on three components that are especially relevant to our study: the fitness function, the search strategy, and the language model."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p8:para350:6",
+    "page": 8,
+    "score": 9.008852,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "6",
+    "text": "The left panel of Figure 4 shows that agents explore a broad range of SSL paradigms and often combine multiple strategies within the same program."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p9:para350:8",
+   "agentssl-2611.17323v1:p9:para350:9",
+   "agentssl-2611.17323v1:p9:para350:10",
+   "agentssl-2611.17323v1:p5:para350:4"
+  ],
+  "context_chars": 1410,
+  "elapsed_ms": 1.69,
+  "error": null,
+  "hit1": false,
+  "hit3": false,
+  "context_hit": true
+ },
+ {
+  "query_id": "t19",
+  "split": "dev",
+  "answerable": true,
+  "question": "What happens to the performance of the best discovered programs when the unlabeled corpus grows while the labeled set stays fixed?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p7:para350:13",
+    "page": 7,
+    "score": 27.308857,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "6",
+    "text": "Figure 3 shows that performance generally improves as more unlabeled data becomes available while keeping the labeled set fixed. This suggests that the discovered programs rely on structure present in the unlabeled data itself.\n\n7"
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p7:para350:12",
+    "page": 7,
+    "score": 20.596188,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "6",
+    "text": "6 Analysis\n\n6.1 Can Agents Leverage Unlabeled Data?\n\nWe first study whether the discovered SSL programs actually make use of unlabeled data. To do this, we fix the top-performing program discovered by AgentSSL and vary only the size of the unlabeled corpus at evaluation time."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p8:para350:0",
+    "page": 8,
+    "score": 20.447781,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "6",
+    "text": "1 img 10% 50% 100% 60 65 70Accuracy (%) 65.5 DTD (k=3) 1 img 10% 50% 100% 20 30 40 50 47.4KITTI (k=5) 1 img 10% 50% 100% 60 70 80 78.2 RESISC45 (k=2) Performance vs. Unlabeled Data Figure 3:Performance of AgentSSL programs as the amount of unlabeled data varies while the labeled set remains fixed."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p7:para350:12",
+   "agentssl-2611.17323v1:p7:para350:13",
+   "agentssl-2611.17323v1:p7:para350:11",
+   "agentssl-2611.17323v1:p8:para350:0"
+  ],
+  "context_chars": 1198,
+  "elapsed_ms": 2.25,
+  "error": null,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true
+ },
+ {
+  "query_id": "t20",
+  "split": "dev",
+  "answerable": true,
+  "question": "According to the debug operator prompt, what must the agent not change when fixing a bug?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p26:para350:12",
+    "page": 26,
+    "score": 20.137653,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "H",
+    "text": "# Idea to implement <the proposed idea/plan> ```python <the implementation of the proposed idea/plan> Debug operator prompt # Introduction:\n\nYou are an expert in data-efficient machine learning and python programming who is tasked with fixing code bugs in a data-efficient machine learning program."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p27:para350:4",
+    "page": 27,
+    "score": 14.928618,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "H",
+    "text": "Generate a bug-fix plan that will structure and guide your step-by-step reasoning process. Reflect on it to make sure all the requirements are satisfied.\n\nFormat the proposed bug-fix plan and code as follows:\n\n# Bug Fix Plan <bug-fix plan> ```python <the fixed python code> ``` Improve operator prompt # Introduction:"
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p26:para350:13",
+    "page": 26,
+    "score": 13.351531,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "H",
+    "text": "Carefully review the previous debugging attempts, the buggy code and its terminal output in addition to the given task/ data details, and available compute resources.\n\nYou must not change the core idea or methodology of the solution, but only fix the bugs in the code. # Task Description:"
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p26:para350:11",
+   "agentssl-2611.17323v1:p26:para350:12",
+   "agentssl-2611.17323v1:p26:para350:13",
+   "agentssl-2611.17323v1:p27:para350:3"
+  ],
+  "context_chars": 1508,
+  "elapsed_ms": 1.7,
+  "error": null,
+  "hit1": false,
+  "hit3": false,
+  "context_hit": false
+ },
+ {
+  "query_id": "n01",
+  "split": "dev",
+  "answerable": false,
+  "question": "What was the total cost in US dollars of the LLM API calls used for the agent searches?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p17:para350:7",
+    "page": 17,
+    "score": 15.332334,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "B",
+    "text": "B.2 Total Compute\n\nThe breadth of baseline algorithms and hyperparameter configurations makes the baseline evaluation substantially more computationally expensive than any individual AgentSSL search. As seen in Table 7, the total compute used to train and tune the baseline models far exceeds the total compute allocated to the agent experiments."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p16:para350:12",
+    "page": 16,
+    "score": 13.454649,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "A",
+    "text": "A.3 Total Compute\n\nWe scale the agent search budget according to the computational cost of the corresponding SSL baselines, since candidate evaluation time increases substantially with dataset size. For the smaller datasets (DTD, RESISC45, and KITTI), each agent run is allocated 8 GPU hours on an NVIDIA RTX 6000 Ada Generation GPU."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p16:para350:15",
+    "page": 16,
+    "score": 13.252669,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "A",
+    "text": "This number represents the amount of compute time taken to perform agent trajectories on a single seed. In our evaluation, we also compute every program on 2 additional seeds which triples the total compute cost to 2,484 GPU hours.\n\n2"
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p17:para350:6",
+   "agentssl-2611.17323v1:p17:para350:7",
+   "agentssl-2611.17323v1:p17:para350:8",
+   "agentssl-2611.17323v1:p16:para350:11",
+   "agentssl-2611.17323v1:p16:para350:12"
+  ],
+  "context_chars": 1483,
+  "elapsed_ms": 2.1,
+  "error": null
+ },
+ {
+  "query_id": "n02",
+  "split": "dev",
+  "answerable": false,
+  "question": "What test accuracy does AgentSSL achieve on CIFAR-10?",
+  "filter": null,
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1600,
+  "neighbors": 1,
+  "results": [
+   {
+    "rank": 1,
+    "id": "agentssl-2611.17323v1:p9:para350:8",
+    "page": 9,
+    "score": 8.590974,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "7",
+    "text": "While all three strategies achieve similar accuracy ranges, they differ substantially in diversity. Evolutionary consistently produces the highest diversity scores, suggesting that population-based search encourages broader exploration."
+   },
+   {
+    "rank": 2,
+    "id": "agentssl-2611.17323v1:p16:para350:5",
+    "page": 16,
+    "score": 8.129425,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "A",
+    "text": "In Figure 7, we see that both feedback metrics, unsupervised and noisy validation, can even be negatively correlated with test accuracy on datasets like KITTI and Retinopathy."
+   },
+   {
+    "rank": 3,
+    "id": "agentssl-2611.17323v1:p9:para350:6",
+    "page": 9,
+    "score": 8.037436,
+    "member_ranks": null,
+    "base_rank": null,
+    "section": "7",
+    "text": "LLM Backbone.We compare GPT-5.4 and Gemini-3.1 as the underlying program-generation models (Table 4). Both models achieve comparable accuracy across datasets, with GPT-5.4 slightly outperforming Gemini-3.1. However, Gemini-3.1 consistently produces higher diversity scores."
+   }
+  ],
+  "context_ids": [
+   "agentssl-2611.17323v1:p9:para350:7",
+   "agentssl-2611.17323v1:p9:para350:8",
+   "agentssl-2611.17323v1:p9:para350:9",
+   "agentssl-2611.17323v1:p16:para350:4"
+  ],
+  "context_chars": 1403,
+  "elapsed_ms": 0.98,
+  "error": null
+ }
+]

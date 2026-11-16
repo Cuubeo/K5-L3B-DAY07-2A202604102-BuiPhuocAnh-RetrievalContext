@@ -1,0 +1,67 @@
+[
+ {
+  "query_id": "t21",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "t22",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "t23",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "t24",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng và đủ; citation chứa nguyên văn evidence."
+ },
+ {
+  "query_id": "t25",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng 141 và 1739 (p28 c14). Chi tiết '47 categories' lấy từ chunk lân cận p28 c13 trong context nhưng không được cite — nhỏ, không sai."
+ },
+ {
+  "query_id": "n03",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "abstention_correct": false,
+  "citation_support": [
+   false,
+   false,
+   false
+  ],
+  "reason": "KHÔNG từ chối: gán kết quả 8/12, +21.8% (phân loại ảnh) cho 'text classification' — sai ngữ cảnh. Các citation đúng nguyên văn nhưng không hỗ trợ khẳng định về text classification."
+ },
+ {
+  "query_id": "n04",
+  "reviewer": "Bùi Phước Anh (đã đọc và xác nhận nhãn Claude đề xuất)",
+  "abstention_correct": false,
+  "citation_support": [
+   true
+  ],
+  "reason": "Không tính là từ chối theo định nghĩa của đề (status 'answered', script yêu cầu nhãn khớp status). Ghi chú: nội dung nói rõ GitHub URL không có trong tài liệu và không bịa URL; chỉ thêm link project website có thật ở p1 c13 (citation hỗ trợ) — từ chối 'mềm', không có khẳng định sai."
+ }
+]

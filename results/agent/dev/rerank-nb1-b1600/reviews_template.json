@@ -1,0 +1,300 @@
+[
+ {
+  "query_id": "q01",
+  "answerable": true,
+  "status": "answered",
+  "answer": "ProgramSelectBench contains a total of 16,977 agent-generated and human-engineered SSL programs [agentssl-2611.17323v1:p1:para350:5].",
+  "citations": [
+   "agentssl-2611.17323v1:p1:para350:5"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q02",
+  "answerable": true,
+  "status": "answered",
+  "answer": "Agents exceed the strongest human-engineered SSL baselines in 8 out of 12 settings, achieving improvements of up to +21.8% [agentssl-2611.17323v1:p1:para350:3].",
+  "citations": [
+   "agentssl-2611.17323v1:p1:para350:3"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q03",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The authors split the task of applying SSL with agents into two sub-problems: (1) program discovery, where an agent iteratively generates and refines candidate programs under limited feedback, and (2) program selection, where a single program must be identified from the discovered candidates for deployment under label scarcity [agentssl-2611.17323v1:p4:para350:9].",
+  "citations": [
+   "agentssl-2611.17323v1:p4:para350:9"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q04",
+  "answerable": true,
+  "status": "answered",
+  "answer": "Oracle performance, when assessing program discovery, is defined as the test performance of the best program in the discovered pool, denoted as Q(A∗). This measure evaluates the quality of the best discovered solution, independent of the ability to select it [agentssl-2611.17323v1:p5:para350:3].",
+  "citations": [
+   "agentssl-2611.17323v1:p5:para350:3"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q05",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The agents were restricted to using the CLIP ViT-B-16 and DINOv2-B backbones in the image classification experiments [agentssl-2611.17323v1:p6:para350:8].",
+  "citations": [
+   "agentssl-2611.17323v1:p6:para350:8"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q06",
+  "answerable": true,
+  "status": "answered",
+  "answer": "Each agent run on the smaller datasets (DTD, RESISC45, and KITTI) lasts for 8 hours on an NVIDIA RTX 6000 Ada Generation GPU [agentssl-2611.17323v1:p6:para350:11].",
+  "citations": [
+   "agentssl-2611.17323v1:p6:para350:11"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q07",
+  "answerable": true,
+  "status": "answered",
+  "answer": "It is better to spend labels on program selection rather than on training when unsupervised metrics fail, as labels spent on selection can buy more accuracy than the same labels spent on training [agentssl-2611.17323v1:p10:para350:10].",
+  "citations": [
+   "agentssl-2611.17323v1:p10:para350:10"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q08",
+  "answerable": true,
+  "status": "answered",
+  "answer": "Metrics based on learned representations can fail to distinguish between agent-generated programs because the agent may utilize the same frozen representation while employing different downstream self-supervised learning (SSL) procedures. This means that even if there are significant differences in predictive performance, representation-based metrics may not be able to differentiate between the programs effectively [agentssl-2611.17323v1:p7:para350:5]. Additionally, these metrics encode assumptions about what constitutes a good model, which can limit their effectiveness in unsupervised selection contexts [agentssl-2611.17323v1:p7:para350:4].",
+  "citations": [
+   "agentssl-2611.17323v1:p7:para350:5",
+   "agentssl-2611.17323v1:p7:para350:4"
+  ],
+  "citation_support": [
+   null,
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q09",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The best Retinopathy program does not train a classifier; instead, it combines frozen DINOv2 features, nearest-neighbor evidence, class prototypes, and an explicit ordinal bias [agentssl-2611.17323v1:p8:para350:10].",
+  "citations": [
+   "agentssl-2611.17323v1:p8:para350:10"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q10",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The LLM backbone that led agents to explore a more varied set of SSL strategies is Gemini-3.1, which consistently produces higher diversity scores compared to GPT-5.4, despite both models achieving comparable accuracy across datasets [agentssl-2611.17323v1:p9:para350:6].",
+  "citations": [
+   "agentssl-2611.17323v1:p9:para350:6"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q11",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The search hyperparameters used for the greedy strategy are: 5 initial drafts, 5 improvement steps, a debug probability of 1.0, and a maximum debug depth of 5 [agentssl-2611.17323v1:p15:para350:6].",
+  "citations": [
+   "agentssl-2611.17323v1:p15:para350:6"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q12",
+  "answerable": true,
+  "status": "answered",
+  "answer": "For the CLEVR dataset, the 10-shot configuration uses 5-fold noisy validation, while the 20-shot configuration uses 4-fold noisy validation [agentssl-2611.17323v1:p15:para350:10].",
+  "citations": [
+   "agentssl-2611.17323v1:p15:para350:10"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q13",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The baselines are rerun across three independently sampled labeled/unlabeled splits for each dataset and shot setting. This differs from the original study, which reported results on a single labeled split [agentssl-2611.17323v1:p17:para350:2].",
+  "citations": [
+   "agentssl-2611.17323v1:p17:para350:2"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q14",
+  "answerable": true,
+  "status": "abstain",
+  "answer": "INSUFFICIENT_EVIDENCE: No specific values for default alpha and number of iterations were found.",
+  "citations": [],
+  "citation_support": [],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "q15",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The draft operator prompt tells the agent to use `torch.optim.AdamW` instead of the deprecated AdamW from transformers [agentssl-2611.17323v1:p26:para350:1].",
+  "citations": [
+   "agentssl-2611.17323v1:p26:para350:1"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "t16",
+  "answerable": true,
+  "status": "answered",
+  "answer": "ProgramSelectBench is organized into 35 selection tasks corresponding to the dataset, shot, and evaluation settings considered in AgentSSL [agentssl-2611.17323v1:p18:para350:9].",
+  "citations": [
+   "agentssl-2611.17323v1:p18:para350:9"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "t17",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The labeling of the WildFin detection data required over 320 hours of expert effort and yielded 21,116 expert-labeled boxes [agentssl-2611.17323v1:p24:para350:9].",
+  "citations": [
+   "agentssl-2611.17323v1:p24:para350:9"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "t18",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The search strategy that explored the broadest range of SSL approaches is the **Evolutionary** strategy. It consistently produces the highest diversity scores, indicating that population-based search encourages broader exploration compared to the other strategies [agentssl-2611.17323v1:p9:para350:8].",
+  "citations": [
+   "agentssl-2611.17323v1:p9:para350:8"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "t19",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The performance of the best discovered programs generally improves as more unlabeled data becomes available while keeping the labeled set fixed. This indicates that the discovered programs utilize the structure present in the unlabeled data itself [agentssl-2611.17323v1:p7:para350:13].",
+  "citations": [
+   "agentssl-2611.17323v1:p7:para350:13"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "t20",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The agent must not change the core idea or methodology of the solution when fixing a bug, but only fix the bugs in the code [agentssl-2611.17323v1:p26:para350:13].",
+  "citations": [
+   "agentssl-2611.17323v1:p26:para350:13"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "n01",
+  "answerable": false,
+  "status": "abstain",
+  "answer": "INSUFFICIENT_EVIDENCE: No specific total cost in US dollars for LLM API calls was found.",
+  "citations": [],
+  "citation_support": [],
+  "abstention_correct": null,
+  "reason": ""
+ },
+ {
+  "query_id": "n02",
+  "answerable": false,
+  "status": "abstain",
+  "answer": "INSUFFICIENT_EVIDENCE: No specific test accuracy for CIFAR-10 was found.",
+  "citations": [],
+  "citation_support": [],
+  "abstention_correct": null,
+  "reason": ""
+ }
+]

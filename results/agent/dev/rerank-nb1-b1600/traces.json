@@ -1,0 +1,1799 @@
+[
+ {
+  "query_id": "q01",
+  "split": "dev",
+  "answerable": true,
+  "question": "How many programs does ProgramSelectBench contain in total?",
+  "status": "answered",
+  "answer": "ProgramSelectBench contains a total of 16,977 agent-generated and human-engineered SSL programs [agentssl-2611.17323v1:p1:para350:5].",
+  "citations": [
+   "agentssl-2611.17323v1:p1:para350:5"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "ProgramSelectBench total number of programs",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p1:para350:5",
+      "page": 1,
+      "score": 0.999173
+     },
+     {
+      "id": "agentssl-2611.17323v1:p2:para350:12",
+      "page": 2,
+      "score": 0.996849
+     },
+     {
+      "id": "agentssl-2611.17323v1:p2:para350:16",
+      "page": 2,
+      "score": 0.996598
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p1:para350:4",
+     "agentssl-2611.17323v1:p1:para350:5",
+     "agentssl-2611.17323v1:p1:para350:6",
+     "agentssl-2611.17323v1:p2:para350:11",
+     "agentssl-2611.17323v1:p2:para350:12"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p1:para350:4",
+   "agentssl-2611.17323v1:p1:para350:5",
+   "agentssl-2611.17323v1:p1:para350:6",
+   "agentssl-2611.17323v1:p2:para350:11",
+   "agentssl-2611.17323v1:p2:para350:12"
+  ],
+  "context_chars": 1052,
+  "usage": {
+   "prompt_tokens": 967,
+   "completion_tokens": 58
+  },
+  "cost_usd": 0.0,
+  "latency_s": 9.28,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "q02",
+  "split": "dev",
+  "answerable": true,
+  "question": "In how many of the 12 settings do agents beat the strongest human-engineered SSL baselines, and by up to how much?",
+  "status": "answered",
+  "answer": "Agents exceed the strongest human-engineered SSL baselines in 8 out of 12 settings, achieving improvements of up to +21.8% [agentssl-2611.17323v1:p1:para350:3].",
+  "citations": [
+   "agentssl-2611.17323v1:p1:para350:3"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "agents beat the strongest human-engineered SSL baselines",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p1:para350:3",
+      "page": 1,
+      "score": 0.9888
+     },
+     {
+      "id": "agentssl-2611.17323v1:p10:para350:9",
+      "page": 10,
+      "score": 0.951762
+     },
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:3",
+      "page": 6,
+      "score": 0.947018
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p1:para350:2",
+     "agentssl-2611.17323v1:p1:para350:3",
+     "agentssl-2611.17323v1:p1:para350:4",
+     "agentssl-2611.17323v1:p10:para350:8",
+     "agentssl-2611.17323v1:p10:para350:9"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p1:para350:2",
+   "agentssl-2611.17323v1:p1:para350:3",
+   "agentssl-2611.17323v1:p1:para350:4",
+   "agentssl-2611.17323v1:p10:para350:8",
+   "agentssl-2611.17323v1:p10:para350:9"
+  ],
+  "context_chars": 1129,
+  "usage": {
+   "prompt_tokens": 1028,
+   "completion_tokens": 71
+  },
+  "cost_usd": 0.0,
+  "latency_s": 11.89,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "q03",
+  "split": "dev",
+  "answerable": true,
+  "question": "Into which two sub-problems do the authors split the task of applying SSL with agents?",
+  "status": "answered",
+  "answer": "The authors split the task of applying SSL with agents into two sub-problems: (1) program discovery, where an agent iteratively generates and refines candidate programs under limited feedback, and (2) program selection, where a single program must be identified from the discovered candidates for deployment under label scarcity [agentssl-2611.17323v1:p4:para350:9].",
+  "citations": [
+   "agentssl-2611.17323v1:p4:para350:9"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "sub-problems SSL agents",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p4:para350:9",
+      "page": 4,
+      "score": 0.882371
+     },
+     {
+      "id": "agentssl-2611.17323v1:p4:para350:8",
+      "page": 4,
+      "score": 0.818555
+     },
+     {
+      "id": "agentssl-2611.17323v1:p1:para350:2",
+      "page": 1,
+      "score": 0.722946
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p4:para350:8",
+     "agentssl-2611.17323v1:p4:para350:9",
+     "agentssl-2611.17323v1:p4:para350:10",
+     "agentssl-2611.17323v1:p4:para350:7",
+     "agentssl-2611.17323v1:p1:para350:1"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p4:para350:8",
+   "agentssl-2611.17323v1:p4:para350:9",
+   "agentssl-2611.17323v1:p4:para350:10",
+   "agentssl-2611.17323v1:p4:para350:7",
+   "agentssl-2611.17323v1:p1:para350:1"
+  ],
+  "context_chars": 1051,
+  "usage": {
+   "prompt_tokens": 993,
+   "completion_tokens": 97
+  },
+  "cost_usd": 0.0,
+  "latency_s": 9.16,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "q04",
+  "split": "dev",
+  "answerable": true,
+  "question": "What does oracle performance measure when assessing program discovery?",
+  "status": "answered",
+  "answer": "Oracle performance, when assessing program discovery, is defined as the test performance of the best program in the discovered pool, denoted as Q(A∗). This measure evaluates the quality of the best discovered solution, independent of the ability to select it [agentssl-2611.17323v1:p5:para350:3].",
+  "citations": [
+   "agentssl-2611.17323v1:p5:para350:3"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "oracle performance measure program discovery",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p5:para350:3",
+      "page": 5,
+      "score": 0.998689
+     },
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:14",
+      "page": 6,
+      "score": 0.961551
+     },
+     {
+      "id": "agentssl-2611.17323v1:p25:para350:3",
+      "page": 25,
+      "score": 0.573803
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p5:para350:2",
+     "agentssl-2611.17323v1:p5:para350:3",
+     "agentssl-2611.17323v1:p5:para350:4",
+     "agentssl-2611.17323v1:p6:para350:13",
+     "agentssl-2611.17323v1:p6:para350:14"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p5:para350:2",
+   "agentssl-2611.17323v1:p5:para350:3",
+   "agentssl-2611.17323v1:p5:para350:4",
+   "agentssl-2611.17323v1:p6:para350:13",
+   "agentssl-2611.17323v1:p6:para350:14"
+  ],
+  "context_chars": 1229,
+  "usage": {
+   "prompt_tokens": 1003,
+   "completion_tokens": 86
+  },
+  "cost_usd": 0.0,
+  "latency_s": 9.75,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "q05",
+  "split": "dev",
+  "answerable": true,
+  "question": "Which pretrained vision backbones were the agents restricted to in the image classification experiments?",
+  "status": "answered",
+  "answer": "The agents were restricted to using the CLIP ViT-B-16 and DINOv2-B backbones in the image classification experiments [agentssl-2611.17323v1:p6:para350:8].",
+  "citations": [
+   "agentssl-2611.17323v1:p6:para350:8"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "pretrained vision backbones image classification experiments",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:8",
+      "page": 6,
+      "score": 0.304626
+     },
+     {
+      "id": "agentssl-2611.17323v1:p5:para350:15",
+      "page": 5,
+      "score": 0.056822
+     },
+     {
+      "id": "agentssl-2611.17323v1:p3:para350:12",
+      "page": 3,
+      "score": 0.054507
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p6:para350:7",
+     "agentssl-2611.17323v1:p6:para350:8",
+     "agentssl-2611.17323v1:p6:para350:9",
+     "agentssl-2611.17323v1:p5:para350:14"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p6:para350:7",
+   "agentssl-2611.17323v1:p6:para350:8",
+   "agentssl-2611.17323v1:p6:para350:9",
+   "agentssl-2611.17323v1:p5:para350:14"
+  ],
+  "context_chars": 1213,
+  "usage": {
+   "prompt_tokens": 981,
+   "completion_tokens": 67
+  },
+  "cost_usd": 0.0,
+  "latency_s": 11.31,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "q06",
+  "split": "dev",
+  "answerable": true,
+  "question": "How long does each agent run last on the smaller datasets (DTD, RESISC45, KITTI), and on which GPU?",
+  "status": "answered",
+  "answer": "Each agent run on the smaller datasets (DTD, RESISC45, and KITTI) lasts for 8 hours on an NVIDIA RTX 6000 Ada Generation GPU [agentssl-2611.17323v1:p6:para350:11].",
+  "citations": [
+   "agentssl-2611.17323v1:p6:para350:11"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "DTD dataset agent run time GPU",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:11",
+      "page": 6,
+      "score": 0.994755
+     },
+     {
+      "id": "agentssl-2611.17323v1:p16:para350:12",
+      "page": 16,
+      "score": 0.991179
+     },
+     {
+      "id": "agentssl-2611.17323v1:p16:para350:14",
+      "page": 16,
+      "score": 0.933253
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p6:para350:10",
+     "agentssl-2611.17323v1:p6:para350:11",
+     "agentssl-2611.17323v1:p6:para350:12",
+     "agentssl-2611.17323v1:p16:para350:11",
+     "agentssl-2611.17323v1:p16:para350:13"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "RESISC45 dataset agent run time GPU",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:11",
+      "page": 6,
+      "score": 0.995941
+     },
+     {
+      "id": "agentssl-2611.17323v1:p16:para350:12",
+      "page": 16,
+      "score": 0.993847
+     },
+     {
+      "id": "agentssl-2611.17323v1:p16:para350:14",
+      "page": 16,
+      "score": 0.830737
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p16:para350:11",
+     "agentssl-2611.17323v1:p16:para350:12",
+     "agentssl-2611.17323v1:p16:para350:13",
+     "agentssl-2611.17323v1:p16:para350:14",
+     "agentssl-2611.17323v1:p16:para350:15"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "KITTI dataset agent run time GPU",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:11",
+      "page": 6,
+      "score": 0.996479
+     },
+     {
+      "id": "agentssl-2611.17323v1:p16:para350:12",
+      "page": 16,
+      "score": 0.99464
+     },
+     {
+      "id": "agentssl-2611.17323v1:p16:para350:14",
+      "page": 16,
+      "score": 0.902828
+     }
+    ],
+    "context_ids": []
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 3,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p6:para350:10",
+   "agentssl-2611.17323v1:p6:para350:11",
+   "agentssl-2611.17323v1:p6:para350:12",
+   "agentssl-2611.17323v1:p16:para350:11",
+   "agentssl-2611.17323v1:p16:para350:13",
+   "agentssl-2611.17323v1:p16:para350:12",
+   "agentssl-2611.17323v1:p16:para350:14",
+   "agentssl-2611.17323v1:p16:para350:15"
+  ],
+  "context_chars": 1963,
+  "usage": {
+   "prompt_tokens": 1552,
+   "completion_tokens": 126
+  },
+  "cost_usd": 0.0,
+  "latency_s": 32.69,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "q07",
+  "split": "dev",
+  "answerable": true,
+  "question": "Under what condition is it better to spend labels on program selection rather than on training?",
+  "status": "answered",
+  "answer": "It is better to spend labels on program selection rather than on training when unsupervised metrics fail, as labels spent on selection can buy more accuracy than the same labels spent on training [agentssl-2611.17323v1:p10:para350:10].",
+  "citations": [
+   "agentssl-2611.17323v1:p10:para350:10"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "better to spend labels on program selection rather than on training",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p10:para350:10",
+      "page": 10,
+      "score": 0.97373
+     },
+     {
+      "id": "agentssl-2611.17323v1:p2:para350:11",
+      "page": 2,
+      "score": 0.854897
+     },
+     {
+      "id": "agentssl-2611.17323v1:p7:para350:8",
+      "page": 7,
+      "score": 0.564815
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p10:para350:9",
+     "agentssl-2611.17323v1:p10:para350:10",
+     "agentssl-2611.17323v1:p10:para350:11",
+     "agentssl-2611.17323v1:p2:para350:10"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p10:para350:9",
+   "agentssl-2611.17323v1:p10:para350:10",
+   "agentssl-2611.17323v1:p10:para350:11",
+   "agentssl-2611.17323v1:p2:para350:10"
+  ],
+  "context_chars": 1119,
+  "usage": {
+   "prompt_tokens": 965,
+   "completion_tokens": 79
+  },
+  "cost_usd": 0.0,
+  "latency_s": 9.85,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "q08",
+  "split": "dev",
+  "answerable": true,
+  "question": "Why can metrics based on learned representations fail to tell agent-generated programs apart?",
+  "status": "answered",
+  "answer": "Metrics based on learned representations can fail to distinguish between agent-generated programs because the agent may utilize the same frozen representation while employing different downstream self-supervised learning (SSL) procedures. This means that even if there are significant differences in predictive performance, representation-based metrics may not be able to differentiate between the programs effectively [agentssl-2611.17323v1:p7:para350:5]. Additionally, these metrics encode assumptions about what constitutes a good model, which can limit their effectiveness in unsupervised selection contexts [agentssl-2611.17323v1:p7:para350:4].",
+  "citations": [
+   "agentssl-2611.17323v1:p7:para350:5",
+   "agentssl-2611.17323v1:p7:para350:4"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "metrics based on learned representations fail to tell agent-generated programs apart",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p7:para350:5",
+      "page": 7,
+      "score": 0.96671
+     },
+     {
+      "id": "agentssl-2611.17323v1:p15:para350:12",
+      "page": 15,
+      "score": 0.125539
+     },
+     {
+      "id": "agentssl-2611.17323v1:p18:para350:16",
+      "page": 18,
+      "score": 0.072487
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p7:para350:4",
+     "agentssl-2611.17323v1:p7:para350:5",
+     "agentssl-2611.17323v1:p7:para350:6",
+     "agentssl-2611.17323v1:p15:para350:11"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p7:para350:4",
+   "agentssl-2611.17323v1:p7:para350:5",
+   "agentssl-2611.17323v1:p7:para350:6",
+   "agentssl-2611.17323v1:p15:para350:11"
+  ],
+  "context_chars": 1214,
+  "usage": {
+   "prompt_tokens": 1055,
+   "completion_tokens": 148
+  },
+  "cost_usd": 0.0,
+  "latency_s": 11.96,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "q09",
+  "split": "dev",
+  "answerable": true,
+  "question": "Instead of training a classifier, what does the best Retinopathy program combine?",
+  "status": "answered",
+  "answer": "The best Retinopathy program does not train a classifier; instead, it combines frozen DINOv2 features, nearest-neighbor evidence, class prototypes, and an explicit ordinal bias [agentssl-2611.17323v1:p8:para350:10].",
+  "citations": [
+   "agentssl-2611.17323v1:p8:para350:10"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "best Retinopathy program combines instead of training a classifier",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p8:para350:10",
+      "page": 8,
+      "score": 0.995005
+     },
+     {
+      "id": "agentssl-2611.17323v1:p23:para350:8",
+      "page": 23,
+      "score": 0.015888
+     },
+     {
+      "id": "agentssl-2611.17323v1:p4:para350:0",
+      "page": 4,
+      "score": 0.014602
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p8:para350:9",
+     "agentssl-2611.17323v1:p8:para350:10",
+     "agentssl-2611.17323v1:p23:para350:7",
+     "agentssl-2611.17323v1:p23:para350:8"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p8:para350:9",
+   "agentssl-2611.17323v1:p8:para350:10",
+   "agentssl-2611.17323v1:p23:para350:7",
+   "agentssl-2611.17323v1:p23:para350:8"
+  ],
+  "context_chars": 1288,
+  "usage": {
+   "prompt_tokens": 1006,
+   "completion_tokens": 79
+  },
+  "cost_usd": 0.0,
+  "latency_s": 12.85,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "q10",
+  "split": "dev",
+  "answerable": true,
+  "question": "Which LLM backbone led agents to explore a more varied set of SSL strategies?",
+  "status": "answered",
+  "answer": "The LLM backbone that led agents to explore a more varied set of SSL strategies is Gemini-3.1, which consistently produces higher diversity scores compared to GPT-5.4, despite both models achieving comparable accuracy across datasets [agentssl-2611.17323v1:p9:para350:6].",
+  "citations": [
+   "agentssl-2611.17323v1:p9:para350:6"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "LLM backbone explore varied SSL strategies",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p8:para350:4",
+      "page": 8,
+      "score": 0.66451
+     },
+     {
+      "id": "agentssl-2611.17323v1:p5:para350:12",
+      "page": 5,
+      "score": 0.492673
+     },
+     {
+      "id": "agentssl-2611.17323v1:p9:para350:4",
+      "page": 9,
+      "score": 0.393758
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p8:para350:3",
+     "agentssl-2611.17323v1:p8:para350:4",
+     "agentssl-2611.17323v1:p8:para350:5",
+     "agentssl-2611.17323v1:p5:para350:11",
+     "agentssl-2611.17323v1:p5:para350:12"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "LLM backbone agents SSL strategies",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p4:para350:2",
+      "page": 4,
+      "score": 0.908518
+     },
+     {
+      "id": "agentssl-2611.17323v1:p8:para350:4",
+      "page": 8,
+      "score": 0.861079
+     },
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:4",
+      "page": 6,
+      "score": 0.490057
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p4:para350:1",
+     "agentssl-2611.17323v1:p4:para350:2",
+     "agentssl-2611.17323v1:p4:para350:3",
+     "agentssl-2611.17323v1:p6:para350:3"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "LLM backbone",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p9:para350:6",
+      "page": 9,
+      "score": 0.789228
+     },
+     {
+      "id": "agentssl-2611.17323v1:p5:para350:13",
+      "page": 5,
+      "score": 0.653977
+     },
+     {
+      "id": "agentssl-2611.17323v1:p22:para350:8",
+      "page": 22,
+      "score": 0.1163
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p9:para350:5",
+     "agentssl-2611.17323v1:p9:para350:6",
+     "agentssl-2611.17323v1:p9:para350:7",
+     "agentssl-2611.17323v1:p5:para350:12"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 3,
+  "llm_calls": 4,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p8:para350:3",
+   "agentssl-2611.17323v1:p8:para350:4",
+   "agentssl-2611.17323v1:p8:para350:5",
+   "agentssl-2611.17323v1:p5:para350:11",
+   "agentssl-2611.17323v1:p5:para350:12",
+   "agentssl-2611.17323v1:p4:para350:1",
+   "agentssl-2611.17323v1:p4:para350:2",
+   "agentssl-2611.17323v1:p4:para350:3",
+   "agentssl-2611.17323v1:p6:para350:3",
+   "agentssl-2611.17323v1:p9:para350:5",
+   "agentssl-2611.17323v1:p9:para350:6",
+   "agentssl-2611.17323v1:p9:para350:7"
+  ],
+  "context_chars": 2986,
+  "usage": {
+   "prompt_tokens": 3646,
+   "completion_tokens": 117
+  },
+  "cost_usd": 0.0,
+  "latency_s": 31.78,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "q11",
+  "split": "dev",
+  "answerable": true,
+  "question": "What search hyperparameters are used for the greedy strategy?",
+  "status": "answered",
+  "answer": "The search hyperparameters used for the greedy strategy are: 5 initial drafts, 5 improvement steps, a debug probability of 1.0, and a maximum debug depth of 5 [agentssl-2611.17323v1:p15:para350:6].",
+  "citations": [
+   "agentssl-2611.17323v1:p15:para350:6"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "search hyperparameters greedy strategy",
+    "filter": {
+     "section": "A"
+    },
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p15:para350:6",
+      "page": 15,
+      "score": 0.995264
+     },
+     {
+      "id": "agentssl-2611.17323v1:p15:para350:9",
+      "page": 15,
+      "score": 0.000439
+     },
+     {
+      "id": "agentssl-2611.17323v1:p15:para350:12",
+      "page": 15,
+      "score": 0.000329
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p15:para350:5",
+     "agentssl-2611.17323v1:p15:para350:6",
+     "agentssl-2611.17323v1:p15:para350:7",
+     "agentssl-2611.17323v1:p15:para350:8"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p15:para350:5",
+   "agentssl-2611.17323v1:p15:para350:6",
+   "agentssl-2611.17323v1:p15:para350:7",
+   "agentssl-2611.17323v1:p15:para350:8"
+  ],
+  "context_chars": 1196,
+  "usage": {
+   "prompt_tokens": 1124,
+   "completion_tokens": 75
+  },
+  "cost_usd": 0.0,
+  "latency_s": 12.88,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "q12",
+  "split": "dev",
+  "answerable": true,
+  "question": "How many folds of noisy validation are used for the CLEVR dataset?",
+  "status": "answered",
+  "answer": "For the CLEVR dataset, the 10-shot configuration uses 5-fold noisy validation, while the 20-shot configuration uses 4-fold noisy validation [agentssl-2611.17323v1:p15:para350:10].",
+  "citations": [
+   "agentssl-2611.17323v1:p15:para350:10"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "folds of noisy validation CLEVR dataset",
+    "filter": {
+     "section": "A"
+    },
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p15:para350:10",
+      "page": 15,
+      "score": 0.989008
+     },
+     {
+      "id": "agentssl-2611.17323v1:p15:para350:9",
+      "page": 15,
+      "score": 0.90468
+     },
+     {
+      "id": "agentssl-2611.17323v1:p15:para350:8",
+      "page": 15,
+      "score": 0.703002
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p15:para350:9",
+     "agentssl-2611.17323v1:p15:para350:10",
+     "agentssl-2611.17323v1:p15:para350:11",
+     "agentssl-2611.17323v1:p15:para350:8"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p15:para350:9",
+   "agentssl-2611.17323v1:p15:para350:10",
+   "agentssl-2611.17323v1:p15:para350:11",
+   "agentssl-2611.17323v1:p15:para350:8"
+  ],
+  "context_chars": 1183,
+  "usage": {
+   "prompt_tokens": 1043,
+   "completion_tokens": 70
+  },
+  "cost_usd": 0.0,
+  "latency_s": 12.54,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "q13",
+  "split": "dev",
+  "answerable": true,
+  "question": "Across how many labeled/unlabeled splits are the baselines rerun, and how does this differ from the original study?",
+  "status": "answered",
+  "answer": "The baselines are rerun across three independently sampled labeled/unlabeled splits for each dataset and shot setting. This differs from the original study, which reported results on a single labeled split [agentssl-2611.17323v1:p17:para350:2].",
+  "citations": [
+   "agentssl-2611.17323v1:p17:para350:2"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "labeled unlabeled splits baselines rerun original study",
+    "filter": {
+     "section": "B"
+    },
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p17:para350:2",
+      "page": 17,
+      "score": 0.996526
+     },
+     {
+      "id": "agentssl-2611.17323v1:p17:para350:3",
+      "page": 17,
+      "score": 0.545733
+     },
+     {
+      "id": "agentssl-2611.17323v1:p17:para350:6",
+      "page": 17,
+      "score": 0.018389
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p17:para350:1",
+     "agentssl-2611.17323v1:p17:para350:2",
+     "agentssl-2611.17323v1:p17:para350:3",
+     "agentssl-2611.17323v1:p17:para350:4",
+     "agentssl-2611.17323v1:p17:para350:5"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p17:para350:1",
+   "agentssl-2611.17323v1:p17:para350:2",
+   "agentssl-2611.17323v1:p17:para350:3",
+   "agentssl-2611.17323v1:p17:para350:4",
+   "agentssl-2611.17323v1:p17:para350:5"
+  ],
+  "context_chars": 1054,
+  "usage": {
+   "prompt_tokens": 1061,
+   "completion_tokens": 80
+  },
+  "cost_usd": 0.0,
+  "latency_s": 11.73,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "q14",
+  "split": "dev",
+  "answerable": true,
+  "question": "In the top-performing Retinopathy program, what are the default alpha and number of iterations in the graph configuration?",
+  "status": "abstain",
+  "answer": "INSUFFICIENT_EVIDENCE: No specific values for default alpha and number of iterations were found.",
+  "citations": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "top-performing Retinopathy program default alpha number of iterations graph configuration",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p4:para350:0",
+      "page": 4,
+      "score": 0.028696
+     },
+     {
+      "id": "agentssl-2611.17323v1:p19:para350:9",
+      "page": 19,
+      "score": 0.026364
+     },
+     {
+      "id": "agentssl-2611.17323v1:p17:para350:9",
+      "page": 17,
+      "score": 0.018448
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p4:para350:0",
+     "agentssl-2611.17323v1:p4:para350:1",
+     "agentssl-2611.17323v1:p19:para350:8",
+     "agentssl-2611.17323v1:p19:para350:9",
+     "agentssl-2611.17323v1:p17:para350:8"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "Retinopathy program graph configuration default alpha number of iterations",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p4:para350:0",
+      "page": 4,
+      "score": 0.038676
+     },
+     {
+      "id": "agentssl-2611.17323v1:p17:para350:9",
+      "page": 17,
+      "score": 0.01509
+     },
+     {
+      "id": "agentssl-2611.17323v1:p19:para350:8",
+      "page": 19,
+      "score": 0.011892
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p17:para350:8",
+     "agentssl-2611.17323v1:p17:para350:9",
+     "agentssl-2611.17323v1:p17:para350:10"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "default alpha number of iterations Retinopathy program",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p15:para350:10",
+      "page": 15,
+      "score": 0.11528
+     },
+     {
+      "id": "agentssl-2611.17323v1:p5:para350:16",
+      "page": 5,
+      "score": 0.068781
+     },
+     {
+      "id": "agentssl-2611.17323v1:p4:para350:0",
+      "page": 4,
+      "score": 0.04144
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p15:para350:9",
+     "agentssl-2611.17323v1:p15:para350:10",
+     "agentssl-2611.17323v1:p15:para350:11",
+     "agentssl-2611.17323v1:p5:para350:15"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "Retinopathy program graph configuration",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p4:para350:0",
+      "page": 4,
+      "score": 0.109075
+     },
+     {
+      "id": "agentssl-2611.17323v1:p8:para350:10",
+      "page": 8,
+      "score": 0.105293
+     },
+     {
+      "id": "agentssl-2611.17323v1:p5:para350:16",
+      "page": 5,
+      "score": 0.070464
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p8:para350:9",
+     "agentssl-2611.17323v1:p8:para350:10",
+     "agentssl-2611.17323v1:p5:para350:15",
+     "agentssl-2611.17323v1:p5:para350:16"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 4,
+  "llm_calls": 5,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p4:para350:0",
+   "agentssl-2611.17323v1:p4:para350:1",
+   "agentssl-2611.17323v1:p19:para350:8",
+   "agentssl-2611.17323v1:p19:para350:9",
+   "agentssl-2611.17323v1:p17:para350:8",
+   "agentssl-2611.17323v1:p17:para350:9",
+   "agentssl-2611.17323v1:p17:para350:10",
+   "agentssl-2611.17323v1:p15:para350:9",
+   "agentssl-2611.17323v1:p15:para350:10",
+   "agentssl-2611.17323v1:p15:para350:11",
+   "agentssl-2611.17323v1:p5:para350:15",
+   "agentssl-2611.17323v1:p8:para350:9",
+   "agentssl-2611.17323v1:p8:para350:10",
+   "agentssl-2611.17323v1:p5:para350:16"
+  ],
+  "context_chars": 3827,
+  "usage": {
+   "prompt_tokens": 6092,
+   "completion_tokens": 108
+  },
+  "cost_usd": 0.0,
+  "latency_s": 44.88,
+  "invalid_citations": [],
+  "context_hit": false
+ },
+ {
+  "query_id": "q15",
+  "split": "dev",
+  "answerable": true,
+  "question": "Which optimizer does the draft operator prompt tell the agent to use instead of the deprecated transformers version?",
+  "status": "answered",
+  "answer": "The draft operator prompt tells the agent to use `torch.optim.AdamW` instead of the deprecated AdamW from transformers [agentssl-2611.17323v1:p26:para350:1].",
+  "citations": [
+   "agentssl-2611.17323v1:p26:para350:1"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "optimizer draft operator prompt deprecated transformers version",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p26:para350:1",
+      "page": 26,
+      "score": 0.386898
+     },
+     {
+      "id": "agentssl-2611.17323v1:p27:para350:9",
+      "page": 27,
+      "score": 0.283064
+     },
+     {
+      "id": "agentssl-2611.17323v1:p25:para350:11",
+      "page": 25,
+      "score": 0.02137
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p26:para350:0",
+     "agentssl-2611.17323v1:p26:para350:1",
+     "agentssl-2611.17323v1:p26:para350:2",
+     "agentssl-2611.17323v1:p27:para350:8"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p26:para350:0",
+   "agentssl-2611.17323v1:p26:para350:1",
+   "agentssl-2611.17323v1:p26:para350:2",
+   "agentssl-2611.17323v1:p27:para350:8"
+  ],
+  "context_chars": 1122,
+  "usage": {
+   "prompt_tokens": 997,
+   "completion_tokens": 62
+  },
+  "cost_usd": 0.0,
+  "latency_s": 12.62,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "t16",
+  "split": "dev",
+  "answerable": true,
+  "question": "Into how many selection tasks is ProgramSelectBench organized?",
+  "status": "answered",
+  "answer": "ProgramSelectBench is organized into 35 selection tasks corresponding to the dataset, shot, and evaluation settings considered in AgentSSL [agentssl-2611.17323v1:p18:para350:9].",
+  "citations": [
+   "agentssl-2611.17323v1:p18:para350:9"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "ProgramSelectBench selection tasks",
+    "filter": {
+     "section": "C"
+    },
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p18:para350:9",
+      "page": 18,
+      "score": 0.999382
+     },
+     {
+      "id": "agentssl-2611.17323v1:p18:para350:14",
+      "page": 18,
+      "score": 0.950864
+     },
+     {
+      "id": "agentssl-2611.17323v1:p18:para350:3",
+      "page": 18,
+      "score": 0.856609
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p18:para350:8",
+     "agentssl-2611.17323v1:p18:para350:9",
+     "agentssl-2611.17323v1:p18:para350:10",
+     "agentssl-2611.17323v1:p18:para350:13",
+     "agentssl-2611.17323v1:p18:para350:14"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p18:para350:8",
+   "agentssl-2611.17323v1:p18:para350:9",
+   "agentssl-2611.17323v1:p18:para350:10",
+   "agentssl-2611.17323v1:p18:para350:13",
+   "agentssl-2611.17323v1:p18:para350:14"
+  ],
+  "context_chars": 1134,
+  "usage": {
+   "prompt_tokens": 1002,
+   "completion_tokens": 61
+  },
+  "cost_usd": 0.0,
+  "latency_s": 10.48,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "t17",
+  "split": "dev",
+  "answerable": true,
+  "question": "How much expert effort went into labeling the WildFin detection data, and how many boxes did it yield?",
+  "status": "answered",
+  "answer": "The labeling of the WildFin detection data required over 320 hours of expert effort and yielded 21,116 expert-labeled boxes [agentssl-2611.17323v1:p24:para350:9].",
+  "citations": [
+   "agentssl-2611.17323v1:p24:para350:9"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "expert effort labeling WildFin detection data boxes yielded",
+    "filter": {
+     "section": "F"
+    },
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p24:para350:9",
+      "page": 24,
+      "score": 0.996974
+     },
+     {
+      "id": "agentssl-2611.17323v1:p24:para350:13",
+      "page": 24,
+      "score": 0.250067
+     },
+     {
+      "id": "agentssl-2611.17323v1:p24:para350:10",
+      "page": 24,
+      "score": 0.000502
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p24:para350:8",
+     "agentssl-2611.17323v1:p24:para350:9",
+     "agentssl-2611.17323v1:p24:para350:10",
+     "agentssl-2611.17323v1:p24:para350:12"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p24:para350:8",
+   "agentssl-2611.17323v1:p24:para350:9",
+   "agentssl-2611.17323v1:p24:para350:10",
+   "agentssl-2611.17323v1:p24:para350:12"
+  ],
+  "context_chars": 1093,
+  "usage": {
+   "prompt_tokens": 1009,
+   "completion_tokens": 67
+  },
+  "cost_usd": 0.0,
+  "latency_s": 6.43,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "t18",
+  "split": "dev",
+  "answerable": true,
+  "question": "Which search strategy explored the broadest range of SSL approaches?",
+  "status": "answered",
+  "answer": "The search strategy that explored the broadest range of SSL approaches is the **Evolutionary** strategy. It consistently produces the highest diversity scores, indicating that population-based search encourages broader exploration compared to the other strategies [agentssl-2611.17323v1:p9:para350:8].",
+  "citations": [
+   "agentssl-2611.17323v1:p9:para350:8"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "search strategy explored the broadest range of SSL approaches",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p9:para350:9",
+      "page": 9,
+      "score": 0.934054
+     },
+     {
+      "id": "agentssl-2611.17323v1:p9:para350:4",
+      "page": 9,
+      "score": 0.812696
+     },
+     {
+      "id": "agentssl-2611.17323v1:p8:para350:6",
+      "page": 8,
+      "score": 0.75951
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p9:para350:8",
+     "agentssl-2611.17323v1:p9:para350:9",
+     "agentssl-2611.17323v1:p9:para350:10",
+     "agentssl-2611.17323v1:p9:para350:3"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p9:para350:8",
+   "agentssl-2611.17323v1:p9:para350:9",
+   "agentssl-2611.17323v1:p9:para350:10",
+   "agentssl-2611.17323v1:p9:para350:3"
+  ],
+  "context_chars": 1118,
+  "usage": {
+   "prompt_tokens": 1017,
+   "completion_tokens": 83
+  },
+  "cost_usd": 0.0,
+  "latency_s": 9.99,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "t19",
+  "split": "dev",
+  "answerable": true,
+  "question": "What happens to the performance of the best discovered programs when the unlabeled corpus grows while the labeled set stays fixed?",
+  "status": "answered",
+  "answer": "The performance of the best discovered programs generally improves as more unlabeled data becomes available while keeping the labeled set fixed. This indicates that the discovered programs utilize the structure present in the unlabeled data itself [agentssl-2611.17323v1:p7:para350:13].",
+  "citations": [
+   "agentssl-2611.17323v1:p7:para350:13"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "performance of the best discovered programs unlabeled corpus grows labeled set fixed",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p7:para350:13",
+      "page": 7,
+      "score": 0.945782
+     },
+     {
+      "id": "agentssl-2611.17323v1:p8:para350:0",
+      "page": 8,
+      "score": 0.858325
+     },
+     {
+      "id": "agentssl-2611.17323v1:p7:para350:12",
+      "page": 7,
+      "score": 0.773323
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p7:para350:12",
+     "agentssl-2611.17323v1:p7:para350:13",
+     "agentssl-2611.17323v1:p8:para350:0",
+     "agentssl-2611.17323v1:p8:para350:1"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p7:para350:12",
+   "agentssl-2611.17323v1:p7:para350:13",
+   "agentssl-2611.17323v1:p8:para350:0",
+   "agentssl-2611.17323v1:p8:para350:1"
+  ],
+  "context_chars": 1153,
+  "usage": {
+   "prompt_tokens": 1091,
+   "completion_tokens": 84
+  },
+  "cost_usd": 0.0,
+  "latency_s": 11.79,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "t20",
+  "split": "dev",
+  "answerable": true,
+  "question": "According to the debug operator prompt, what must the agent not change when fixing a bug?",
+  "status": "answered",
+  "answer": "The agent must not change the core idea or methodology of the solution when fixing a bug, but only fix the bugs in the code [agentssl-2611.17323v1:p26:para350:13].",
+  "citations": [
+   "agentssl-2611.17323v1:p26:para350:13"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "debug operator prompt agent not change when fixing a bug",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p26:para350:13",
+      "page": 26,
+      "score": 0.447844
+     },
+     {
+      "id": "agentssl-2611.17323v1:p26:para350:12",
+      "page": 26,
+      "score": 0.205501
+     },
+     {
+      "id": "agentssl-2611.17323v1:p27:para350:4",
+      "page": 27,
+      "score": 0.022964
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p26:para350:12",
+     "agentssl-2611.17323v1:p26:para350:13",
+     "agentssl-2611.17323v1:p26:para350:14",
+     "agentssl-2611.17323v1:p26:para350:11"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p26:para350:12",
+   "agentssl-2611.17323v1:p26:para350:13",
+   "agentssl-2611.17323v1:p26:para350:14",
+   "agentssl-2611.17323v1:p26:para350:11"
+  ],
+  "context_chars": 1015,
+  "usage": {
+   "prompt_tokens": 962,
+   "completion_tokens": 68
+  },
+  "cost_usd": 0.0,
+  "latency_s": 9.76,
+  "invalid_citations": [],
+  "context_hit": false
+ },
+ {
+  "query_id": "n01",
+  "split": "dev",
+  "answerable": false,
+  "question": "What was the total cost in US dollars of the LLM API calls used for the agent searches?",
+  "status": "abstain",
+  "answer": "INSUFFICIENT_EVIDENCE: No specific total cost in US dollars for LLM API calls was found.",
+  "citations": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "total cost in US dollars of the LLM API calls used for the agent searches",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p16:para350:12",
+      "page": 16,
+      "score": 0.009652
+     },
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:10",
+      "page": 6,
+      "score": 0.009329
+     },
+     {
+      "id": "agentssl-2611.17323v1:p20:para350:16",
+      "page": 20,
+      "score": 0.00905
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p16:para350:11",
+     "agentssl-2611.17323v1:p16:para350:12",
+     "agentssl-2611.17323v1:p16:para350:13",
+     "agentssl-2611.17323v1:p6:para350:9",
+     "agentssl-2611.17323v1:p6:para350:10"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "cost of LLM API calls",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p19:para350:1",
+      "page": 19,
+      "score": 0.000173
+     },
+     {
+      "id": "agentssl-2611.17323v1:p1:para350:12",
+      "page": 1,
+      "score": 0.000137
+     },
+     {
+      "id": "agentssl-2611.17323v1:p15:para350:7",
+      "page": 15,
+      "score": 0.000118
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p19:para350:0",
+     "agentssl-2611.17323v1:p19:para350:1",
+     "agentssl-2611.17323v1:p19:para350:2",
+     "agentssl-2611.17323v1:p1:para350:11",
+     "agentssl-2611.17323v1:p1:para350:13"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "LLM API calls cost",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p1:para350:12",
+      "page": 1,
+      "score": 0.000405
+     },
+     {
+      "id": "agentssl-2611.17323v1:p9:para350:2",
+      "page": 9,
+      "score": 0.00016
+     },
+     {
+      "id": "agentssl-2611.17323v1:p16:para350:14",
+      "page": 16,
+      "score": 0.000136
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p1:para350:11",
+     "agentssl-2611.17323v1:p1:para350:12",
+     "agentssl-2611.17323v1:p1:para350:13",
+     "agentssl-2611.17323v1:p9:para350:1",
+     "agentssl-2611.17323v1:p9:para350:3"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "cost of LLM API calls total",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p16:para350:15",
+      "page": 16,
+      "score": 0.000399
+     },
+     {
+      "id": "agentssl-2611.17323v1:p19:para350:1",
+      "page": 19,
+      "score": 0.000395
+     },
+     {
+      "id": "agentssl-2611.17323v1:p16:para350:14",
+      "page": 16,
+      "score": 0.000373
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p16:para350:14",
+     "agentssl-2611.17323v1:p16:para350:15",
+     "agentssl-2611.17323v1:p16:para350:13"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 4,
+  "llm_calls": 5,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p16:para350:11",
+   "agentssl-2611.17323v1:p16:para350:12",
+   "agentssl-2611.17323v1:p16:para350:13",
+   "agentssl-2611.17323v1:p6:para350:9",
+   "agentssl-2611.17323v1:p6:para350:10",
+   "agentssl-2611.17323v1:p19:para350:0",
+   "agentssl-2611.17323v1:p19:para350:1",
+   "agentssl-2611.17323v1:p19:para350:2",
+   "agentssl-2611.17323v1:p1:para350:11",
+   "agentssl-2611.17323v1:p1:para350:13",
+   "agentssl-2611.17323v1:p1:para350:12",
+   "agentssl-2611.17323v1:p9:para350:1",
+   "agentssl-2611.17323v1:p9:para350:3",
+   "agentssl-2611.17323v1:p16:para350:14",
+   "agentssl-2611.17323v1:p16:para350:15"
+  ],
+  "context_chars": 3778,
+  "usage": {
+   "prompt_tokens": 6534,
+   "completion_tokens": 105
+  },
+  "cost_usd": 0.0,
+  "latency_s": 38.42,
+  "invalid_citations": []
+ },
+ {
+  "query_id": "n02",
+  "split": "dev",
+  "answerable": false,
+  "question": "What test accuracy does AgentSSL achieve on CIFAR-10?",
+  "status": "abstain",
+  "answer": "INSUFFICIENT_EVIDENCE: No specific test accuracy for CIFAR-10 was found.",
+  "citations": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "AgentSSL CIFAR-10 test accuracy",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p19:para350:5",
+      "page": 19,
+      "score": 0.823976
+     },
+     {
+      "id": "agentssl-2611.17323v1:p9:para350:2",
+      "page": 9,
+      "score": 0.569666
+     },
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:15",
+      "page": 6,
+      "score": 0.216161
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p19:para350:4",
+     "agentssl-2611.17323v1:p19:para350:5",
+     "agentssl-2611.17323v1:p19:para350:6",
+     "agentssl-2611.17323v1:p9:para350:2"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "AgentSSL CIFAR-10 test accuracy results",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p8:para350:0",
+      "page": 8,
+      "score": 0.839991
+     },
+     {
+      "id": "agentssl-2611.17323v1:p19:para350:5",
+      "page": 19,
+      "score": 0.806315
+     },
+     {
+      "id": "agentssl-2611.17323v1:p9:para350:2",
+      "page": 9,
+      "score": 0.732881
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p8:para350:0",
+     "agentssl-2611.17323v1:p8:para350:1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "AgentSSL CIFAR-10 accuracy",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p8:para350:0",
+      "page": 8,
+      "score": 0.76729
+     },
+     {
+      "id": "agentssl-2611.17323v1:p9:para350:2",
+      "page": 9,
+      "score": 0.424381
+     },
+     {
+      "id": "agentssl-2611.17323v1:p9:para350:10",
+      "page": 9,
+      "score": 0.371654
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p9:para350:9",
+     "agentssl-2611.17323v1:p9:para350:10",
+     "agentssl-2611.17323v1:p9:para350:11"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "rerank",
+    "query": "AgentSSL CIFAR-10 performance metrics",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p8:para350:0",
+      "page": 8,
+      "score": 0.707737
+     },
+     {
+      "id": "agentssl-2611.17323v1:p1:para350:4",
+      "page": 1,
+      "score": 0.641104
+     },
+     {
+      "id": "agentssl-2611.17323v1:p4:para350:1",
+      "page": 4,
+      "score": 0.588808
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p1:para350:3",
+     "agentssl-2611.17323v1:p1:para350:4",
+     "agentssl-2611.17323v1:p1:para350:5",
+     "agentssl-2611.17323v1:p4:para350:0",
+     "agentssl-2611.17323v1:p4:para350:1"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 4,
+  "llm_calls": 5,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p19:para350:4",
+   "agentssl-2611.17323v1:p19:para350:5",
+   "agentssl-2611.17323v1:p19:para350:6",
+   "agentssl-2611.17323v1:p9:para350:2",
+   "agentssl-2611.17323v1:p8:para350:0",
+   "agentssl-2611.17323v1:p8:para350:1",
+   "agentssl-2611.17323v1:p9:para350:9",
+   "agentssl-2611.17323v1:p9:para350:10",
+   "agentssl-2611.17323v1:p9:para350:11",
+   "agentssl-2611.17323v1:p1:para350:3",
+   "agentssl-2611.17323v1:p1:para350:4",
+   "agentssl-2611.17323v1:p1:para350:5",
+   "agentssl-2611.17323v1:p4:para350:0",
+   "agentssl-2611.17323v1:p4:para350:1"
+  ],
+  "context_chars": 3977,
+  "usage": {
+   "prompt_tokens": 6391,
+   "completion_tokens": 100
+  },
+  "cost_usd": 0.0,
+  "latency_s": 45.49,
+  "invalid_citations": []
+ }
+]

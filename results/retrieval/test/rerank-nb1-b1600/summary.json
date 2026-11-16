@@ -1,0 +1,33 @@
+{
+ "method": "rerank",
+ "split": "test",
+ "config": {
+  "base": {
+   "fusion": "RRF",
+   "k": 60,
+   "candidates_per_retriever": 20,
+   "members": [
+    "dense",
+    "bm25"
+   ]
+  },
+  "base_name": "hybrid",
+  "reranker": "BAAI/bge-reranker-v2-m3",
+  "candidates": 20,
+  "max_length": 512
+ },
+ "top_k": 3,
+ "budget_chars": 1600,
+ "neighbors": 1,
+ "n_answerable": 5,
+ "n_abstain": 2,
+ "hit1": "4/5 (80%)",
+ "evidence_hit3": "5/5 (100%)",
+ "context_evidence_rate": "5/5 (100%)",
+ "misses_hit3": [],
+ "errors": [],
+ "avg_context_chars": 1400.6,
+ "median_ms": 7665.63,
+ "cost_usd": 0,
+ "run": "rerank-nb1-b1600"
+}

@@ -62,12 +62,27 @@
     "page": 2,
     "evidence": "where a single program must be identified from the discovered candidates without a large labeled validation set",
     "group": 0
+   },
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 4,
+    "evidence": "program discovery, where an agent iteratively generates and refines candidate programs under limited feedback",
+    "group": 1
+   },
+   {
+    "source_id": "agentssl-2611.17323v1",
+    "page": 4,
+    "evidence": "program selection, where a single program must be identified from the discovered candidates",
+    "group": 1
    }
   ],
   "answerable": true,
   "type": "paraphrase",
   "day6_split": "dev",
-  "gold_mode": "cần đủ mọi evidence cùng group trong một chunk"
+  "gold_mode": "cần đủ mọi evidence cùng group trong một chunk",
+  "label_fixes": [
+   "Phân tích lỗi dev (2026-11-16): dense trả về trang 4 chunk 9, có cùng nội dung 'two core challenges: (1) program discovery ... (2) program selection'. Đây là evidence tương đương bị thiếu trong gold Day 6, không phải lỗi retrieval. Sửa trên dev, trước khi chạy test."
+  ]
  },
  {
   "id": "q04",

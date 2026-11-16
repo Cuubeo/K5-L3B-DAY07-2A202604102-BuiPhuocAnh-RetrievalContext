@@ -1,0 +1,8 @@
+[
+ {"id": "q03",
+  "reason": "Phân tích lỗi dev (2026-11-16): dense trả về trang 4 chunk 9, có cùng nội dung 'two core challenges: (1) program discovery ... (2) program selection'. Đây là evidence tương đương bị thiếu trong gold Day 6, không phải lỗi retrieval. Sửa trên dev, trước khi chạy test.",
+  "add_gold": [
+   {"source_id": "agentssl-2611.17323v1", "page": 4, "evidence": "program discovery, where an agent iteratively generates and refines candidate programs under limited feedback"},
+   {"source_id": "agentssl-2611.17323v1", "page": 4, "evidence": "program selection, where a single program must be identified from the discovered candidates"}
+  ]}
+]

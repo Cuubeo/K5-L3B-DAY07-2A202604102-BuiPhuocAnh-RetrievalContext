@@ -1,0 +1,104 @@
+[
+ {
+  "query_id": "t21",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The authors use Aira-Dojo as the test harness to study agent design choices in the SSL setting, providing a consistent environment for this evaluation [agentssl-2611.17323v1:p3:para350:4].",
+  "citations": [
+   "agentssl-2611.17323v1:p3:para350:4"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "t22",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The agent uses a fixed set of program transformation operators that includes Draft, Debug, Improve, and Analyze operators [agentssl-2611.17323v1:p4:para350:14].",
+  "citations": [
+   "agentssl-2611.17323v1:p4:para350:14"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "t23",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The label budget (number of iterations) for each active selection algorithm on ProgramSelectBench is determined by the formula: min(25, # of classes × # of training images per class) [agentssl-2611.17323v1:p19:para350:8].",
+  "citations": [
+   "agentssl-2611.17323v1:p19:para350:8"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "t24",
+  "answerable": true,
+  "status": "answered",
+  "answer": "The model used in the LLM-as-judge pipeline that analyzes agent-generated programs is GPT-5.4 [agentssl-2611.17323v1:p20:para350:16].",
+  "citations": [
+   "agentssl-2611.17323v1:p20:para350:16"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "t25",
+  "answerable": true,
+  "status": "answered",
+  "answer": "In the DTD 3-shot example, the agent receives a total of 141 labeled training images (3 images per class across 47 categories) and 1739 unlabeled datapoints [agentssl-2611.17323v1:p28:para350:14].",
+  "citations": [
+   "agentssl-2611.17323v1:p28:para350:14"
+  ],
+  "citation_support": [
+   null
+  ],
+  "answer_grade": null,
+  "reason": ""
+ },
+ {
+  "query_id": "n03",
+  "answerable": false,
+  "status": "answered",
+  "answer": "AgentSSL demonstrates strong performance in text classification tasks, exceeding the strongest human-engineered baselines in 8 out of 12 settings by up to +21.8% under weak feedback conditions and matched compute resources [agentssl-2611.17323v1:p1:para350:3]. However, it faces challenges with program selection, where performance can drop by as much as 47% when based on the agent’s feedback metric [agentssl-2611.17323v1:p1:para350:4]. The effectiveness of program selection is critical, as misalignment between the feedback metric and test performance can lead to substantial degradation in results [agentssl-2611.17323v1:p7:para350:3].",
+  "citations": [
+   "agentssl-2611.17323v1:p1:para350:3",
+   "agentssl-2611.17323v1:p1:para350:4",
+   "agentssl-2611.17323v1:p7:para350:3"
+  ],
+  "citation_support": [
+   null,
+   null,
+   null
+  ],
+  "abstention_correct": null,
+  "reason": ""
+ },
+ {
+  "query_id": "n04",
+  "answerable": false,
+  "status": "answered",
+  "answer": "The GitHub URL of the AgentSSL source code is not explicitly mentioned in the search results. However, the project website is provided as https://codiscovery.ai/AgentSSL [agentssl-2611.17323v1:p1:para350:13]. \n\nFor the specific GitHub URL, further information may be needed.",
+  "citations": [
+   "agentssl-2611.17323v1:p1:para350:13"
+  ],
+  "citation_support": [
+   null
+  ],
+  "abstention_correct": null,
+  "reason": ""
+ }
+]

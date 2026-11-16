@@ -1,0 +1,518 @@
+[
+ {
+  "query_id": "t21",
+  "split": "test",
+  "answerable": true,
+  "question": "Which test harness do the authors use to study agent design choices in the SSL setting?",
+  "status": "answered",
+  "answer": "The authors use Aira-Dojo as the test harness to study agent design choices in the SSL setting [agentssl-2611.17323v1:p3:para350:4].",
+  "citations": [
+   "agentssl-2611.17323v1:p3:para350:4"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "dense",
+    "query": "test harness agent design choices SSL setting",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p3:para350:4",
+      "page": 3,
+      "score": 0.625431
+     },
+     {
+      "id": "agentssl-2611.17323v1:p3:para350:7",
+      "page": 3,
+      "score": 0.602928
+     },
+     {
+      "id": "agentssl-2611.17323v1:p2:para350:14",
+      "page": 2,
+      "score": 0.585259
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p3:para350:4",
+     "agentssl-2611.17323v1:p3:para350:7"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p3:para350:4",
+   "agentssl-2611.17323v1:p3:para350:7"
+  ],
+  "context_chars": 557,
+  "usage": {
+   "prompt_tokens": 797,
+   "completion_tokens": 60
+  },
+  "cost_usd": 0.0,
+  "latency_s": 4.92,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "t22",
+  "split": "test",
+  "answerable": true,
+  "question": "What fixed set of program transformation operators does the agent use during search?",
+  "status": "answered",
+  "answer": "The agent uses a fixed set of four program transformation operators during search: Draft, Improve, Debug, and Analyze [agentssl-2611.17323v1:p25:para350:10].",
+  "citations": [
+   "agentssl-2611.17323v1:p25:para350:10"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "dense",
+    "query": "fixed set of program transformation operators",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p5:para350:13",
+      "page": 5,
+      "score": 0.550861
+     },
+     {
+      "id": "agentssl-2611.17323v1:p4:para350:12",
+      "page": 4,
+      "score": 0.420005
+     },
+     {
+      "id": "agentssl-2611.17323v1:p27:para350:8",
+      "page": 27,
+      "score": 0.405784
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p5:para350:13",
+     "agentssl-2611.17323v1:p4:para350:12"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "dense",
+    "query": "program transformation operators O",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p5:para350:13",
+      "page": 5,
+      "score": 0.696228
+     },
+     {
+      "id": "agentssl-2611.17323v1:p25:para350:10",
+      "page": 25,
+      "score": 0.456081
+     },
+     {
+      "id": "agentssl-2611.17323v1:p4:para350:14",
+      "page": 4,
+      "score": 0.442366
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p25:para350:10",
+     "agentssl-2611.17323v1:p4:para350:14"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 2,
+  "llm_calls": 3,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p5:para350:13",
+   "agentssl-2611.17323v1:p4:para350:12",
+   "agentssl-2611.17323v1:p25:para350:10",
+   "agentssl-2611.17323v1:p4:para350:14"
+  ],
+  "context_chars": 975,
+  "usage": {
+   "prompt_tokens": 1513,
+   "completion_tokens": 76
+  },
+  "cost_usd": 0.0,
+  "latency_s": 8.58,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "t23",
+  "split": "test",
+  "answerable": true,
+  "question": "How is the label budget (number of iterations) for each active selection algorithm determined on ProgramSelectBench?",
+  "status": "answered",
+  "answer": "The label budget (number of iterations) for each active selection algorithm on ProgramSelectBench is determined by the formula: min(25, # of classes × # of training images per class) [agentssl-2611.17323v1:p19:para350:8].",
+  "citations": [
+   "agentssl-2611.17323v1:p19:para350:8"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "dense",
+    "query": "label budget number of iterations active selection algorithm ProgramSelectBench",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p19:para350:8",
+      "page": 19,
+      "score": 0.746539
+     },
+     {
+      "id": "agentssl-2611.17323v1:p18:para350:3",
+      "page": 18,
+      "score": 0.711675
+     },
+     {
+      "id": "agentssl-2611.17323v1:p7:para350:11",
+      "page": 7,
+      "score": 0.703932
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p19:para350:8",
+     "agentssl-2611.17323v1:p18:para350:3"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p19:para350:8",
+   "agentssl-2611.17323v1:p18:para350:3"
+  ],
+  "context_chars": 554,
+  "usage": {
+   "prompt_tokens": 804,
+   "completion_tokens": 81
+  },
+  "cost_usd": 0.0,
+  "latency_s": 6.42,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "t24",
+  "split": "test",
+  "answerable": true,
+  "question": "Which model is used in the LLM-as-judge pipeline that analyzes agent-generated programs?",
+  "status": "answered",
+  "answer": "The model used in the LLM-as-judge pipeline that analyzes agent-generated programs is GPT-5.4 [agentssl-2611.17323v1:p20:para350:16].",
+  "citations": [
+   "agentssl-2611.17323v1:p20:para350:16"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "dense",
+    "query": "LLM-as-judge pipeline agent-generated programs model",
+    "filter": {
+     "section": "D"
+    },
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p20:para350:16",
+      "page": 20,
+      "score": 0.696485
+     },
+     {
+      "id": "agentssl-2611.17323v1:p22:para350:7",
+      "page": 22,
+      "score": 0.578085
+     },
+     {
+      "id": "agentssl-2611.17323v1:p20:para350:17",
+      "page": 20,
+      "score": 0.469123
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p20:para350:16",
+     "agentssl-2611.17323v1:p22:para350:7"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p20:para350:16",
+   "agentssl-2611.17323v1:p22:para350:7"
+  ],
+  "context_chars": 431,
+  "usage": {
+   "prompt_tokens": 826,
+   "completion_tokens": 64
+  },
+  "cost_usd": 0.0,
+  "latency_s": 5.52,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "t25",
+  "split": "test",
+  "answerable": true,
+  "question": "In the example AgentSSL prompt for DTD 3-shot, how many labeled training images and how many unlabeled datapoints does the agent receive?",
+  "status": "answered",
+  "answer": "In the example AgentSSL prompt for DTD 3-shot, the agent receives 141 labeled training images (3 images per class) and 1739 unlabeled datapoints [agentssl-2611.17323v1:p31:para350:2].",
+  "citations": [
+   "agentssl-2611.17323v1:p31:para350:2"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "dense",
+    "query": "AgentSSL prompt for DTD 3-shot labeled training images unlabeled datapoints",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p31:para350:2",
+      "page": 31,
+      "score": 0.703352
+     },
+     {
+      "id": "agentssl-2611.17323v1:p32:para350:4",
+      "page": 32,
+      "score": 0.703352
+     },
+     {
+      "id": "agentssl-2611.17323v1:p28:para350:14",
+      "page": 28,
+      "score": 0.696925
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p31:para350:2",
+     "agentssl-2611.17323v1:p28:para350:14"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 1,
+  "llm_calls": 2,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p31:para350:2",
+   "agentssl-2611.17323v1:p28:para350:14"
+  ],
+  "context_chars": 521,
+  "usage": {
+   "prompt_tokens": 856,
+   "completion_tokens": 83
+  },
+  "cost_usd": 0.0,
+  "latency_s": 6.11,
+  "invalid_citations": [],
+  "context_hit": true
+ },
+ {
+  "query_id": "n03",
+  "split": "test",
+  "answerable": false,
+  "question": "How well does AgentSSL perform on text classification tasks?",
+  "status": "answered",
+  "answer": "AgentSSL demonstrates competitive performance on text classification tasks, particularly when programs are selected using oracle test performance. It achieves notable accuracy across various datasets and shot settings, as indicated in the results. For instance, in a comparison with strong SSL baselines, AgentSSL's performance is highlighted in Table 1 of the results section, showing its effectiveness in discovering programs that perform well in text classification tasks [agentssl-2611.17323v1:p6:para350:14].\n\nAdditionally, a specific comparison between AgentSL and AgentSSL across datasets and label settings shows that AgentSSL achieves accuracy rates such as 64.71%, 72.15%, and 76.93% under different conditions [agentssl-2611.17323v1:p25:para350:8]. Overall, these results indicate that AgentSSL is a strong contender in the realm of text classification.",
+  "citations": [
+   "agentssl-2611.17323v1:p6:para350:14",
+   "agentssl-2611.17323v1:p25:para350:8"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "dense",
+    "query": "AgentSSL performance text classification tasks",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p18:para350:9",
+      "page": 18,
+      "score": 0.633217
+     },
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:14",
+      "page": 6,
+      "score": 0.584206
+     },
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:6",
+      "page": 6,
+      "score": 0.581939
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p18:para350:9",
+     "agentssl-2611.17323v1:p6:para350:14"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "dense",
+    "query": "AgentSSL text classification results performance comparison",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p25:para350:8",
+      "page": 25,
+      "score": 0.624342
+     },
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:14",
+      "page": 6,
+      "score": 0.604885
+     },
+     {
+      "id": "agentssl-2611.17323v1:p8:para350:0",
+      "page": 8,
+      "score": 0.583204
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p25:para350:8",
+     "agentssl-2611.17323v1:p8:para350:0"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 2,
+  "llm_calls": 3,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p18:para350:9",
+   "agentssl-2611.17323v1:p6:para350:14",
+   "agentssl-2611.17323v1:p25:para350:8",
+   "agentssl-2611.17323v1:p8:para350:0"
+  ],
+  "context_chars": 1113,
+  "usage": {
+   "prompt_tokens": 1539,
+   "completion_tokens": 216
+  },
+  "cost_usd": 0.0,
+  "latency_s": 10.38,
+  "invalid_citations": []
+ },
+ {
+  "query_id": "n04",
+  "split": "test",
+  "answerable": false,
+  "question": "What is the GitHub URL of the AgentSSL source code?",
+  "status": "abstain",
+  "answer": "INSUFFICIENT_EVIDENCE: No GitHub URL provided.",
+  "citations": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "dense",
+    "query": "AgentSSL GitHub URL",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p4:para350:9",
+      "page": 4,
+      "score": 0.559223
+     },
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:6",
+      "page": 6,
+      "score": 0.556356
+     },
+     {
+      "id": "agentssl-2611.17323v1:p31:para350:10",
+      "page": 31,
+      "score": 0.548419
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p4:para350:9",
+     "agentssl-2611.17323v1:p31:para350:10"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "dense",
+    "query": "AgentSSL source code GitHub",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p31:para350:10",
+      "page": 31,
+      "score": 0.577303
+     },
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:6",
+      "page": 6,
+      "score": 0.571816
+     },
+     {
+      "id": "agentssl-2611.17323v1:p4:para350:8",
+      "page": 4,
+      "score": 0.558604
+     }
+    ],
+    "context_ids": [
+     "agentssl-2611.17323v1:p6:para350:6",
+     "agentssl-2611.17323v1:p4:para350:8"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "dense",
+    "query": "AgentSSL GitHub repository",
+    "filter": null,
+    "results": [
+     {
+      "id": "agentssl-2611.17323v1:p6:para350:6",
+      "page": 6,
+      "score": 0.552033
+     },
+     {
+      "id": "agentssl-2611.17323v1:p4:para350:9",
+      "page": 4,
+      "score": 0.551774
+     },
+     {
+      "id": "agentssl-2611.17323v1:p31:para350:10",
+      "page": 31,
+      "score": 0.547578
+     }
+    ],
+    "context_ids": []
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "n_searches": 3,
+  "llm_calls": 4,
+  "final_context_ids": [
+   "agentssl-2611.17323v1:p4:para350:9",
+   "agentssl-2611.17323v1:p31:para350:10",
+   "agentssl-2611.17323v1:p6:para350:6",
+   "agentssl-2611.17323v1:p4:para350:8"
+  ],
+  "context_chars": 732,
+  "usage": {
+   "prompt_tokens": 2036,
+   "completion_tokens": 67
+  },
+  "cost_usd": 0.0,
+  "latency_s": 10.19,
+  "invalid_citations": []
+ }
+]
